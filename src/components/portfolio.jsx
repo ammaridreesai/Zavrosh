@@ -30,17 +30,17 @@ const Portfolio = (props) => {
       </div>
 
       {/* Niche Selector */}
-      <div className="niche-selector">
-        {Object.keys(props.data || {}).map((niche, index) => (
-          <button
-            key={index}
-            onClick={() => setSelectedNiche(niche)}
-            className={selectedNiche === niche ? "active" : ""}
-          >
-            {niche}
-          </button>
-        ))}
-      </div>
+      {/*<div className="niche-selector">*/}
+      {/*  {Object.keys(props.data || {}).map((niche, index) => (*/}
+      {/*    <button*/}
+      {/*      key={index}*/}
+      {/*      onClick={() => setSelectedNiche(niche)}*/}
+      {/*      className={selectedNiche === niche ? "active" : ""}*/}
+      {/*    >*/}
+      {/*      {niche}*/}
+      {/*    </button>*/}
+      {/*  ))}*/}
+      {/*</div>*/}
 
       {/* Swiper Slider */}
       <Swiper
