@@ -18,7 +18,10 @@ const Portfolio = (props) => {
   return (
     <>
     <section className="portfolio-section">
-      <h2 className="portfolio-heading">My Portfolio</h2>
+     <div className="section-title text-center">
+          <h2>My Portfolio</h2>
+          
+        </div>
       <div className="portfolio-grid">
         {props.portfolioData.map((project, projectIndex) => (
           <div
