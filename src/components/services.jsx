@@ -6,8 +6,8 @@ export const Services = (props) => {
       <div className="container">
         <div className="section-title">
           <h2>Our Services</h2>
-          <p>
-            We craft thrilling games with dynamic AI, cross-platform performance, and engaging player experiences. Design stunning 3D worlds using Blender and Unreal Engine—realistic models to interactive spaces. Develop scalable web solutions with React.js and .NET Core, blending sleek frontends with powerful backends.
+          <p className="service-desc">
+            We create powerful and intelligent software solutions across web, mobile, and emerging platforms. From intuitive user experiences to robust back-end systems, we deliver scalable, secure, and future-ready applications. Our work integrates AI, cloud, and blockchain technologies to build innovative, high-performance digital products.
           </p>
         </div>
         <div className="row">

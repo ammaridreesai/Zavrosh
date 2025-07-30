@@ -186,16 +186,6 @@
       "text": "From concept to launch, we craft engaging and immersive games for all platforms."
     },
     {
-      "icon": "fa fa-cube",
-      "name": "3D Visualization",
-      "text": "We create stunning 3D models, animations, and visualizations for architecture, gaming, and more."
-    },
-    {
-      "icon": "fa fa-play-circle",
-      "name": "XR Development",
-      "text": "We bring experiences to life with Augmented and Virtual Reality applications tailored to your needs."
-    },
-    {
       "icon": "fa fa-code",
       "name": "Web Development",
       "text": "We build modern, responsive, and scalable websites that help your business stand out online."
@@ -219,6 +209,16 @@
       "icon": "fa fa-cogs",
       "name": "Custom Software Development",
       "text": "We build tailored software solutions for web, mobile, and desktop."
+    },
+    {
+      "icon": "fa fa-cloud",
+      "name": "Cloud Solutions",
+      "text": "We design and deploy cloud-native applications to ensure scalability, reliability, and performance."
+    },
+    {
+      "icon": "fa fa-shield",
+      "name": "Cybersecurity Services",
+      "text": "We provide end-to-end security solutions to protect your systems, data, and digital assets."
     }
   ],
   "Testimonials": [
@@ -305,13 +305,12 @@
       "text": "Our solutions streamline logistics with real-time tracking, automated warehouse systems, and AI-optimized delivery routes."
     }
   ],
-  "Portfolio": {
-    "Web/App Development": [
+  "Portfolio":  [
       {
-        "media": {
+        "media": [{
           "type": "video",
           "src": "img/portfolio/lawvocate.mp4"
-        },
+        }],
         "title": "Lawvocate.AI",
         "technologies": [
           {
@@ -330,10 +329,10 @@
         "description": "Lawvocate.ai equips businesses with white-labeled AI tools for seamless legal and business services. Boost efficiency, cut costs, and stay ahead with smart, AI-driven solutions!"
       },
       {
-        "media": {
+        "media": [{
           "type": "image",
           "src": "img/portfolio/toproz.jpeg"
-        },
+        }],
         "title": "TopProz",
         "technologies": [
           {
@@ -356,10 +355,10 @@
         "description": "TopProz fuels service pros with two game-changing tools: Saddle for effortless marketing and VanLynk for seamless management. Grow, streamline, and thrive—all in one place!"
       },
       {
-        "media": {
+        "media": [{
           "type": "image",
           "src": "img/portfolio/fryfarm.jpeg"
-        },
+        }],
         "title": "Fry.Farm",
         "technologies": [
           {
@@ -376,7 +375,70 @@
           }
         ],
         "description": "Fry.farm makes staking ASA tokens easy! Earn big rewards, enjoy high APRs, and grow your assets—all while staying secure with smart contracts."
+      },
+      {
+        "media": [
+          {
+            "type": "image",
+            "src": "img/portfolio/streetartist1.png",
+            "isLong": true
+          },
+          {
+            "type": "image",
+            "src": "img/portfolio/streetartist2.png",
+            "isLong": true
+          }
+        ],
+        "title": "Street Artist",
+        "technologies": [
+          {
+            "name": "React",
+            "icon": "img/portfolio/atom.png"
+          },
+          {
+            "name": "Next JS",
+            "icon": "img/portfolio/next-js.svg"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "img/portfolio/bootstrap.jpg"
+          }
+        ],
+        "description": "Fry.farm makes staking ASA tokens easy! Earn big rewards, enjoy high APRs, and grow your assets—all while staying secure with smart contracts."
+      },
+      {
+        "media": [
+          {
+            "type": "image",
+            "src": "img/portfolio/ADM1.jpg"
+          },
+          {
+            "type": "image",
+            "src": "img/portfolio/ADM2.jpg"
+          },
+          {
+            "type": "image",
+            "src": "img/portfolio/ADM3.png",
+            "isLong": true
+          }
+        ],
+        "title": "ADM - ECommerce",
+        "technologies": [
+          {
+            "name": "React",
+            "icon": "img/portfolio/atom.png"
+          },
+          {
+            "name": "Next JS",
+            "icon": "img/portfolio/next-js.svg"
+          },
+          {
+            "name": "Bootstrap",
+            "icon": "img/portfolio/bootstrap.jpg"
+          }
+        ],
+        "description": "Fry.farm makes staking ASA tokens easy! Earn big rewards, enjoy high APRs, and grow your assets—all while staying secure with smart contracts."
       }
     ]
-  }
+  
 }

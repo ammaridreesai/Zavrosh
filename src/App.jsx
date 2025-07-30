@@ -12,6 +12,10 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import Portfolio from "./components/portfolio";
+// import Modal from "react-modal";
+
+// Modal.setAppElement('#root'); 
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -23,15 +27,18 @@ const App = () => {
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
+if (!landingPageData || landingPageData.length === 0) {
+  return null; // or return a loading spinner/component here
+}
 
   return (
-    <div>
+    <div id="root">
       <Navigation />
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
       <Services data={landingPageData.Services} />
-      <Portfolio data={landingPageData.Portfolio} />
+      <Portfolio portfolioData={landingPageData.Portfolio} />
       <Gallery data={landingPageData.Gallery} />
       <Testimonials data={landingPageData.Testimonials} />
       <Team data={landingPageData.Team} />
