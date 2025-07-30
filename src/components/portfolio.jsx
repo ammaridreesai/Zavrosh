@@ -154,9 +154,7 @@ const MediaSlider = ({ media, title, inModal }) => {
               <img
                 src={mediaItem.src}
                 alt={`${title} ${index + 1}`}
-                className={`slider-media image ${
-                  mediaItem.isLong ? "long-image" : ""
-                }`}
+                className={`slider-media image ${mediaItem.isLong ? "long-image" : ""} ${inModal ? "in-modal" : ""}`}
               />
             )}
           </div>

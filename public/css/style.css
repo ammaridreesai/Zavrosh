@@ -1133,7 +1133,7 @@ body.zoom-active {
   overflow: hidden; /* Hide overflow if media doesn't fit exactly */
 }
 .in-modal{
-    height: 350px !important;
+    max-height: 350px !important;
 }
 
 .portfolio-media {
