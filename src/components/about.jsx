@@ -1,5 +1,5 @@
 import React from "react";
-import LazyImage from './LazyImage';
+import LazyImage from "./LazyImage";
 
 export const About = (props) => {
   return (
@@ -7,7 +7,11 @@ export const About = (props) => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <LazyImage src="img/logo_bg_remove.png" className="img-fluid" alt="Zavrosh company logo" />
+            <LazyImage
+              src="img/logo-nobg.png"
+              className="img-fluid bg-black"
+              alt="Zavrosh company logo"
+            />
           </div>
           <div className="col-12 col-md-6">
             <div className="about-text">
