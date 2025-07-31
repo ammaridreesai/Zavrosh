@@ -5,9 +5,9 @@ export const Services = (props) => {
     <div id="services" className="text-center responsive-section">
       <div className="container">
         <div className="section-title">
-          <h2>Our Services</h2>
+          <h2>Our Kinks</h2>
           <p className="service-desc">
-            We create powerful and intelligent software solutions across web, mobile, and emerging platforms. From intuitive user experiences to robust back-end systems, we deliver scalable, secure, and future-ready applications. Our work integrates AI, cloud, and blockchain technologies to build innovative, high-performance digital products.
+            We dominate web, mobile, and emerging platforms with powerful, intelligent software that knows exactly how to please. From silky-smooth user experiences to rock-hard back-end systems, we build scalable, secure, and future-ready applications that never quit. Our work gets down with AI, cloud, and blockchain — tying together cutting-edge tech to create digital products that perform like they’re under your complete control.
           </p>
         </div>
         <div className="row">

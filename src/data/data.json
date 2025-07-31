@@ -1,19 +1,18 @@
 {
   "Header": {
-    "title": "Welcome to Zavrosh",
-    "paragraph": "Empowering the future with visionary software and AI solutions that drive innovation, efficiency, and digital transformation."
+    "title": "Welcome to Seduce Code",
+    "paragraph": "We’ll go deep… front-end, back-end, every end."
   },
   "About": {
-    "paragraph": "At Zavrosh, we build intelligent, scalable, and human-centric software solutions—spanning web apps, mobile applications, and AI-driven platforms. With a commitment to excellence, our mission is to merge creativity with technology to drive real-world impact.",
-    "paragraph2": "Co-founded by Zubair and Ammar, Zavrosh stands at the intersection of innovation and reliability. Every project is executed with precision, transparent communication, and agile delivery—so your vision scales, performs, and inspires.",
+    "paragraph": "At SeduceCode, we don’t just build software — we make it irresistible. Intelligent, scalable, and built to perform, our web apps, mobile magic, and AI platforms know exactly how to please. We mix creativity with tech to get you results that feel just right… every single time.",
+    "paragraph2": "Co-founded by Zubair & Ammar, we bring passion and precision to every line of code. We play hard, work smart, and deliver fast — so your vision doesn’t just grow, it gets down and dirty with success.",
     "Why": [
-      "Zubair & Ammar’s Vision: Purpose-driven innovation at the core.",
-      "Agile Workflows: Delivering rapid results without compromise.",
-      "Versatile Platforms: From AI to apps—web, mobile, and beyond.",
-      "Reliable Execution: From brief to build, we deliver with integrity.",
-      "Optimal Scalability: Solutions built to evolve with your business.",
-      "Smart Design: Where user experience meets engineering excellence.",
-      "Human-Centric Tech: Technology that understands and empowers."
+      "Fearless Vision: Driven by passion, fueled by bold ideas.",
+      "Unmatched Agility: Rapid delivery with no sloppy moves.",
+      "Cutting-Edge Platforms: From AI to apps — if it’s digital, we’re ready to dive in.",
+      "Keen Execution: From your first dirty thought to the final build, we’re on it.",
+      "Maximum Scalability: Solutions that stretch and flex as your business gets bigger and bolder.",
+      "Elevated Design: UX so smooth, it leaves users begging for more."
     ],
     "Why2": []
   },
@@ -165,47 +164,48 @@
     }
   ],
   "Services": [
-    {
-      "icon": "fa fa-gamepad",
-      "name": "Game Development",
-      "text": "From concept to launch, we craft engaging and immersive games for all platforms."
-    },
-    {
-      "icon": "fa fa-code",
-      "name": "Web Development",
-      "text": "We build modern, responsive, and scalable websites that help your business stand out online."
-    },
-    {
-      "icon": "fa fa-mobile",
-      "name": "Mobile App Development",
-      "text": "We create high-performance iOS and Android apps with a seamless user experience."
-    },
-    {
-      "icon": "fa fa-magic",
-      "name": "AI Integration",
-      "text": "We integrate AI solutions to automate tasks, enhance decision-making, and optimize business processes."
-    },
-    {
-      "icon": "fa fa-link",
-      "name": "Blockchain Development",
-      "text": "We build secure and scalable blockchain applications for finance, supply chain, and more."
-    },
-    {
-      "icon": "fa fa-cogs",
-      "name": "Custom Software Development",
-      "text": "We build tailored software solutions for web, mobile, and desktop."
-    },
-    {
-      "icon": "fa fa-cloud",
-      "name": "Cloud Solutions",
-      "text": "We design and deploy cloud-native applications to ensure scalability, reliability, and performance."
-    },
-    {
-      "icon": "fa fa-shield",
-      "name": "Cybersecurity Services",
-      "text": "We provide end-to-end security solutions to protect your systems, data, and digital assets."
-    }
-  ],
+  {
+    "icon": "fa fa-gamepad",
+    "name": "Game Development",
+    "text": "From the first tease to the final level, we craft games that keep players hooked — mastering every move and combo."
+  },
+  {
+    "icon": "fa fa-code",
+    "name": "Web Development",
+    "text": "We build sleek, responsive sites that grab attention and keep your audience engaged — no matter how deep they want to go."
+  },
+  {
+    "icon": "fa fa-mobile",
+    "name": "Mobile App Development",
+    "text": "Apps so smooth and intuitive, they fit perfectly in users’ hands and never miss a beat — always ready for a quick session."
+  },
+  {
+    "icon": "fa fa-magic",
+    "name": "AI Integration",
+    "text": "We bring in AI that learns your moves, anticipates your needs, and keeps your business running like a well-oiled machine."
+  },
+  {
+    "icon": "fa fa-link",
+    "name": "Blockchain Development",
+    "text": "Secure and unbreakable chains that lock down your assets tight — keeping everything honest and ready for any transaction."
+  },
+  {
+    "icon": "fa fa-cogs",
+    "name": "Custom Software Development",
+    "text": "Tailor-made solutions designed to fit your unique desires — engineered to perform and built to satisfy every demand."
+  },
+  {
+    "icon": "fa fa-cloud",
+    "name": "Cloud Solutions",
+    "text": "Cloud-native apps that keep your systems flowing, scaling, and hitting the right spots, no matter how intense the load."
+  },
+  {
+    "icon": "fa fa-shield",
+    "name": "Cybersecurity Services",
+    "text": "We protect your data and digital secrets like a trusted partner — always watching, always ready to defend your interests."
+  }
+],
+
   "Testimonials": [
     {
       "img": "https://randomuser.me/api/portraits/men/32.jpg",
@@ -272,22 +272,22 @@
     {
       "icon": "fa fa-stethoscope",
       "title": "Healthcare",
-      "text": "We empower healthcare providers with secure patient portals, AI-driven diagnostics, and custom telemedicine platforms to deliver care with speed and precision."
+      "text": "We get deep inside healthcare, building patient portals so tight and secure, AI that knows exactly where to poke, and telemedicine that hits all the right spots, fast and precise."
     },
     {
       "icon": "fa fa-university",
       "title": "Finance & Banking",
-      "text": "From digital wallets to fraud analytics, we craft secure, high-performance software that drives modern banking and financial services."
+      "text": "From fat wallets to sniffing out fraud like a pro, we craft software that handles your cash with tight security and keeps the financial game wet and wild."
     },
     {
       "icon": "fa fa-shopping-cart",
       "title": "E-Commerce & Retail",
-      "text": "We build high-converting online stores, intelligent product recommendation engines, and seamless checkout experiences across web and mobile."
+      "text": "We build online stores that make your customers come back begging, with horny product suggestions and slick checkout moves that never miss a beat."
     },
     {
       "icon": "fa fa-truck",
       "title": "Logistics & Supply Chain",
-      "text": "Our solutions streamline logistics with real-time tracking, automated warehouse systems, and AI-optimized delivery routes."
+      "text": "We keep your shipments moving hard and fast, with real-time tracking, automated warehouses that never get lazy, and AI routes so smooth it’ll make your head spin."
     }
   ],
   "Portfolio":  [

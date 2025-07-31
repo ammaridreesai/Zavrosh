@@ -43,9 +43,9 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>Get In Touch</h2>
+                <h2>Ready to Play? Let’s Talk</h2>
                 <p>
-                  Got a question, a project, or just want to say hi? Fill out the form below! We promise to reply faster than your WiFi during a Netflix binge.
+                  Got a question, a project, or just wanna slide into our DMs? Fill out the form below — whether you want a quickie or a long-term play, we promise to blow your mind and reply faster than your WiFi cuts out right before the best part.
                 </p>
               </div>
 
@@ -99,9 +99,9 @@ export const Contact = (props) => {
               </form>
 
               <div className="section-title" style={{ marginTop: "50px" }}>
-                <h2>Book a Free Consulting Call</h2>
+                <h2>Claim Your Free Tease & Talk</h2>
                 <p>
-                  Let’s discuss how we can solve your business technical needs. Book a free call with me, and I’ll see it in my calendar!
+                  Let’s get intimate with your business tech needs. Book a free call with me — I’ll lock it in tight on my calendar and make sure we spark something hot, fast, and unforgettable.
                 </p>
                 <div className="booking-widget">
                   <iframe

@@ -3,7 +3,7 @@ export const Features = (props) => {
     <div id="features" className="text-center responsive-section">
       <div className="container">
         <div className="col-md-10 col-md-offset-1 section-title">
-          <h2>Multi-Industry Expertise</h2>
+          <h2>Experts in All the Right Positions</h2>
         </div>
         <div className="row">
           {props.data
