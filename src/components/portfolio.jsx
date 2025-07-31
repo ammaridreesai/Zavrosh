@@ -57,7 +57,7 @@ const Portfolio = (props) => {
               <p className="portfolio-description">{project.description}</p>
               <div className="portfolio-technologies">
                 {project.technologies.map((tech, techIndex) => (
-                  <div className="tech-item" key={techIndex}>
+                  <div className="portfolio-tech-item" key={techIndex}>
                     <img
                       src={tech.icon}
                       alt={tech.name}

@@ -24,21 +24,6 @@
       "smallImage": "img/portfolio/unreal.png"
     },
     {
-      "title": "Unity",
-      "largeImage": "img/portfolio/unity.png",
-      "smallImage": "img/portfolio/unity.png"
-    },
-    {
-      "title": "3DS Max",
-      "largeImage": "img/portfolio/3ds.png",
-      "smallImage": "img/portfolio/3ds.png"
-    },
-    {
-      "title": "Blender",
-      "largeImage": "img/portfolio/blender.png",
-      "smallImage": "img/portfolio/blender.png"
-    },
-    {
       "title": "Adobe Photoshop",
       "largeImage": "img/portfolio/photoshop.png",
       "smallImage": "img/portfolio/photoshop.png"
@@ -331,32 +316,6 @@
       {
         "media": [{
           "type": "image",
-          "src": "img/portfolio/toproz.jpeg"
-        }],
-        "title": "TopProz",
-        "technologies": [
-          {
-            "name": "React",
-            "icon": "img/portfolio/atom.png"
-          },
-          {
-            "name": "Node.js",
-            "icon": "img/portfolio/node.png"
-          },
-          {
-            "name": "Mango DB",
-            "icon": "img/portfolio/mango.png"
-          },
-          {
-            "name": "Express JS",
-            "icon": "img/portfolio/express.png"
-          }
-        ],
-        "description": "TopProz fuels service pros with two game-changing tools: Saddle for effortless marketing and VanLynk for seamless management. Grow, streamline, and thrive—all in one place!"
-      },
-      {
-        "media": [{
-          "type": "image",
           "src": "img/portfolio/fryfarm.jpeg"
         }],
         "title": "Fry.Farm",
@@ -366,8 +325,16 @@
             "icon": "img/portfolio/atom.png"
           },
           {
+            "name": "TypeScript",
+            "icon": "img/portfolio/typescript.png"
+          },
+          {
             "name": "Next JS",
             "icon": "img/portfolio/next-js.svg"
+          },
+          {
+            "name": "Node.js",
+            "icon": "img/portfolio/node.png"
           },
           {
             "name": "SQL",
@@ -400,21 +367,27 @@
             "icon": "img/portfolio/next-js.svg"
           },
           {
-            "name": "Bootstrap",
-            "icon": "img/portfolio/bootstrap.jpg"
+            "name": "Tailwind CSS",
+            "icon": "img/portfolio/tailwind.png"
+          },
+          {
+            "name": "Mango DB",
+            "icon": "img/portfolio/mango.png"
           }
         ],
-        "description": "Fry.farm makes staking ASA tokens easy! Earn big rewards, enjoy high APRs, and grow your assets—all while staying secure with smart contracts."
+        "description": "Street Artist lets users share and discover street art, complete with photos and location details from around the world."
       },
       {
         "media": [
           {
             "type": "image",
-            "src": "img/portfolio/ADM1.jpg"
+            "src": "img/portfolio/ADM1.jpg",
+            "isLong": true
           },
           {
             "type": "image",
-            "src": "img/portfolio/ADM2.jpg"
+            "src": "img/portfolio/ADM2.jpg",
+            "isLong": true
           },
           {
             "type": "image",
@@ -423,6 +396,53 @@
           }
         ],
         "title": "ADM - ECommerce",
+        "technologies": [
+          {
+            "name": "Angular JS",
+            "icon": "img/portfolio/angular.png"
+          },
+          {
+            "name": "Tailwind CSS",
+            "icon": "img/portfolio/tailwind.png"
+          },
+          {
+            "name": "C#",
+            "icon": "img/portfolio/csharp.png"
+          },
+          {
+            "name": "ASP .Net",
+            "icon": "img/portfolio/dotnet.png"
+          },
+          {
+            "name": "SQL",
+            "icon": "img/portfolio/sql.png"
+          }
+        ],
+        "description": "ADM – ECommerce is a platform for managing and selling products online, enabling businesses to showcase items, process orders, and reach customers with ease."
+      },
+      {
+        "media": [
+          {
+            "type": "image",
+            "src": "img/portfolio/barbados/barbados3.png",
+            "isLong": true
+          },
+          {
+            "type": "image",
+            "src": "img/portfolio/barbados/barbados4.png"
+          },
+          {
+            "type": "image",
+            "src": "img/portfolio/barbados/barbados2.png",
+            "isLong": true
+          },
+          {
+            "type": "image",
+            "src": "img/portfolio/barbados/barbados1.png",
+            "isLong": true
+          }
+        ],
+        "title": "Data Protection Commision",
         "technologies": [
           {
             "name": "React",
@@ -435,6 +455,47 @@
           {
             "name": "Bootstrap",
             "icon": "img/portfolio/bootstrap.jpg"
+          },
+          {
+            "name": "ASP .Net",
+            "icon": "img/portfolio/dotnet.png"
+          },
+          {
+            "name": "Figma",
+            "icon": "img/portfolio/figma.png"
+          }
+        ],
+        "description": "E‑Learning Library is an online platform offering a collection of courses, tutorials, and learning resources to support skill development anytime, anywhere."
+      },
+      {
+        "media": [
+          {
+            "type": "image",
+            "src": "img/portfolio/eLearning.png",
+            "isLong": true
+          }
+        ],
+        "title": "E-Learning Library",
+        "technologies": [
+          {
+            "name": "React",
+            "icon": "img/portfolio/atom.png"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "img/portfolio/typescript.png"
+          },
+          {
+            "name": "Node.js",
+            "icon": "img/portfolio/node.png"
+          },
+          {
+            "name": "Mango DB",
+            "icon": "img/portfolio/mango.png"
+          },
+          {
+            "name": "Express JS",
+            "icon": "img/portfolio/express.png"
           }
         ],
         "description": "Fry.farm makes staking ASA tokens easy! Earn big rewards, enjoy high APRs, and grow your assets—all while staying secure with smart contracts."
