@@ -3,7 +3,7 @@ import React from "react";
 
 export const Gallery = (props) => {
   return (
-    <div id="tech-stack" className="tech-stack-section">
+    <div id="gallery" className="tech-stack-section">
       <div className="container">
         <div className="section-title">
           <h2>Technology Stack At Your Disposal</h2>

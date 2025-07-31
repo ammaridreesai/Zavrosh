@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from './LazyImage';
 
 export const Image = ({ title, largeImage, smallImage }) => {
   return (
@@ -6,7 +7,7 @@ export const Image = ({ title, largeImage, smallImage }) => {
       <div>
         {" "}
         <a href={largeImage} title={title} data-lightbox-gallery="gallery1">
-          <img src={smallImage} className="img-responsive" alt={title} />{" "}
+          <LazyImage src={smallImage} className="img-fluid" alt={`${title} technology icon`} />
         </a>{" "}
       </div>
     </div>
