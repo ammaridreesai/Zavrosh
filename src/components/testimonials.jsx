@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from './LazyImage';
 
 export const Testimonials = (props) => {
   return (
@@ -14,7 +15,7 @@ export const Testimonials = (props) => {
                 <div className="testimonial">
                   <div className="testimonial-image">
                     {" "}
-                    <img src={d.img} alt="" />{" "}
+                    <LazyImage src={d.img} alt={`${d.name} testimonial photo`} />
                   </div>
                   <div className="testimonial-content">
                     <p>"{d.text}"</p>

@@ -1,20 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { Features } from "./components/features";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Gallery } from "./components/gallery";
-import { Testimonials } from "./components/testimonials";
-import { Team } from "./components/Team";
-import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
-import Portfolio from "./components/portfolio";
-// import Modal from "react-modal";
 
-// Modal.setAppElement('#root'); 
+// Lazy load components
+const Header = React.lazy(() => import("./components/header").then(module => ({ default: module.Header })));
+const Features = React.lazy(() => import("./components/features").then(module => ({ default: module.Features })));
+const About = React.lazy(() => import("./components/about").then(module => ({ default: module.About })));
+const Services = React.lazy(() => import("./components/services").then(module => ({ default: module.Services })));
+const Portfolio = React.lazy(() => import("./components/portfolio"));
+const Gallery = React.lazy(() => import("./components/gallery").then(module => ({ default: module.Gallery })));
+const Testimonials = React.lazy(() => import("./components/testimonials").then(module => ({ default: module.Testimonials })));
+const Team = React.lazy(() => import("./components/Team").then(module => ({ default: module.Team })));
+const Contact = React.lazy(() => import("./components/contact").then(module => ({ default: module.Contact }))); 
 
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -27,22 +26,45 @@ const App = () => {
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
-if (!landingPageData || landingPageData.length === 0) {
-  return null; // or return a loading spinner/component here
+if (!landingPageData || Object.keys(landingPageData).length === 0) {
+  return (
+    <div className="loading-spinner">
+      <div className="spinner"></div>
+      <p>Loading...</p>
+    </div>
+  );
 }
 
   return (
     <div id="root">
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Portfolio portfolioData={landingPageData.Portfolio} />
-      <Gallery data={landingPageData.Gallery} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading Header...</div>}>
+        <Header data={landingPageData.Header} />
+      </Suspense>
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading Features...</div>}>
+        <Features data={landingPageData.Features} />
+      </Suspense>
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading About...</div>}>
+        <About data={landingPageData.About} />
+      </Suspense>
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading Services...</div>}>
+        <Services data={landingPageData.Services} />
+      </Suspense>
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading Portfolio...</div>}>
+        <Portfolio portfolioData={landingPageData.Portfolio} />
+      </Suspense>
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading Tech Stack...</div>}>
+        <Gallery data={landingPageData.Gallery} />
+      </Suspense>
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading Testimonials...</div>}>
+        <Testimonials data={landingPageData.Testimonials} />
+      </Suspense>
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading Team...</div>}>
+        <Team data={landingPageData.Team} />
+      </Suspense>
+      <Suspense fallback={<div className="loading-section"><div className="loading-spinner"></div> Loading Contact...</div>}>
+        <Contact data={landingPageData.Contact} />
+      </Suspense>
     </div>
   );
 };

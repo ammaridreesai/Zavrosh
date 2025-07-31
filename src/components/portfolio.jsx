@@ -1,16 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import LazyImage from './LazyImage';
 
 const Portfolio = (props) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
 
-  useEffect(() => {
-    console.log("Portfolio data:", props.portfolioData);
-  }, [props.portfolioData]);
 
   if(!props.portfolioData){
     return null
@@ -39,11 +37,14 @@ const Portfolio = (props) => {
                     controls
                     src={project.media[0].src}
                     className="portfolio-media video"
-                  ></video>
+                    aria-label={`${project.title} demonstration video`}
+                  >
+                    <p>Your browser doesn't support HTML5 video. <a href={project.media[0].src}>Download the video</a> instead.</p>
+                  </video>
                 ) : (
-                  <img
+                  <LazyImage
                     src={project.media[0].src}
-                    alt={`${project.title} 1`}
+                    alt={`${project.title} project screenshot`}
                     className={`portfolio-media image ${
                       project.media[0].isLong ? "long-image" : ""
                     }`}
@@ -86,11 +87,13 @@ const Portfolio = (props) => {
       ) : (
         <div className="in-modal portfolio-media-container">
           {selectedProject.media[0].type === 'video' ? (
-            <video controls src={selectedProject.media[0].src} className="portfolio-media video" />
+            <video controls src={selectedProject.media[0].src} className="portfolio-media video" aria-label={`${selectedProject.title} demonstration video`}>
+              <p>Your browser doesn't support HTML5 video. <a href={selectedProject.media[0].src}>Download the video</a> instead.</p>
+            </video>
           ) : (
-            <img
+            <LazyImage
               src={selectedProject.media[0].src}
-              alt={`${selectedProject.title} 1`}
+              alt={`${selectedProject.title} project screenshot`}
               className={`portfolio-media image ${selectedProject.media[0].isLong ? 'long-image' : ''}`}
             />
           )}
@@ -124,7 +127,7 @@ const MediaSlider = ({ media, title, inModal }) => {
             className="slider-arrow prev-arrow"
             onClick={(e) => {
               e.stopPropagation(); // prevent parent onClick
-              goToNextSlide();
+              goToPrevSlide();
             }}
           >
             &#10094;
@@ -152,11 +155,14 @@ const MediaSlider = ({ media, title, inModal }) => {
                 controls
                 src={mediaItem.src}
                 className="slider-media video"
-              ></video>
+                aria-label={`${title} demonstration video ${index + 1}`}
+              >
+                <p>Your browser doesn't support HTML5 video. <a href={mediaItem.src}>Download the video</a> instead.</p>
+              </video>
             ) : (
-              <img
+              <LazyImage
                 src={mediaItem.src}
-                alt={`${title} ${index + 1}`}
+                alt={`${title} project screenshot ${index + 1}`}
                 className={`slider-media image ${mediaItem.isLong ? "long-image" : ""} ${inModal ? "in-modal" : ""}`}
               />
             )}

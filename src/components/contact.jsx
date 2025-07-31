@@ -1,6 +1,5 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import React from "react";
 
 const initialState = {
   name: "",
@@ -19,20 +18,23 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
+    
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      alert('Please fill in all fields');
+      return;
+    }
 
     emailjs
       .sendForm("service_4t0520f", "template_ysuvx0g", e.target, "IQRWrnLskn2jksLh4")
       .then(
         (result) => {
-          console.log(result.text);
+          alert('Message sent successfully!');
           clearState();
-          e.target.reset(); // ✅ Reset the form as well
+          e.target.reset();
         },
         (error) => {
-          console.log(error.text);
+          alert('Failed to send message. Please try again.');
+          console.error('EmailJS error:', error);
         }
       );
   };
@@ -115,7 +117,7 @@ export const Contact = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 col-md-offset-1 contact-info">
+          <div className="col-md-3 offset-md-1 contact-info">
             <div className="contact-item">
               <h3>Contact Info</h3>
               <p>
@@ -148,12 +150,12 @@ export const Contact = (props) => {
                 <ul>
                   <li>
                     <a href={props.data ? props.data.facebook : "/"}>
-                      <i className="fa fa-linkedin"></i>
+                      <i className="fa fa-facebook"></i>
                     </a>
                   </li>
                   <li>
                     <a href={props.data ? props.data.twitter : "/"}>
-                      <i className="fa fa-brands fa-twitter"></i>
+                      <i className="fa fa-twitter"></i>
                     </a>
                   </li>
                   <li>
@@ -167,16 +169,6 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-      {/* <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 };

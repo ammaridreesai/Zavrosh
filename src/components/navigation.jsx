@@ -18,7 +18,7 @@ export const Navigation = (props) => {
           <a className="navbar-brand page-scroll" href="#page-top">
             <img
               src="img/logo-nobg.png"
-              alt="Logo"
+              alt="Zavrosh Company Logo"
               style={{ height: "50px", marginRight: "10px" }}
             />
             {/* <span className="nav-header-text">Zavrosh</span> */}
@@ -47,6 +47,11 @@ export const Navigation = (props) => {
             </li>
             <li>
               <a href="#portfolio" className="page-scroll">
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#gallery" className="page-scroll">
                 Tech Stack
               </a>
             </li>
