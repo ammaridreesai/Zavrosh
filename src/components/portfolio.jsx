@@ -1,8 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Navigation, Autoplay, Pagination, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 import LazyImage from './LazyImage';
 
 const Portfolio = (props) => {
@@ -18,59 +20,93 @@ const Portfolio = (props) => {
     <section className="portfolio-section">
      <div className="section-title text-center">
           <h2>My Portfolio</h2>
-          
         </div>
-      <div className="portfolio-grid">
-        {props.portfolioData.map((project, projectIndex) => (
-          <div
-            className="portfolio-item"
-            key={projectIndex}
-            onClick={() => setSelectedProject(project)}
-          >
-            {/* Conditional rendering for slider or single media */}
-            {project.media.length > 1 ? (
-              <MediaSlider media={project.media} title={project.title} />
-            ) : (
-              <div className="portfolio-media-container">
-                {project.media[0].type === "video" ? (
-                  <video
-                    controls
-                    src={project.media[0].src}
-                    className="portfolio-media video"
-                    aria-label={`${project.title} demonstration video`}
-                  >
-                    <p>Your browser doesn't support HTML5 video. <a href={project.media[0].src}>Download the video</a> instead.</p>
-                  </video>
+      <div className="portfolio-slider-container">
+        <Swiper
+          modules={[Navigation, Autoplay, Pagination, EffectCoverflow]}
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation={true}
+          pagination={{ 
+            clickable: true,
+            dynamicBullets: true
+          }}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          effect="coverflow"
+          coverflowEffect={{
+            rotate: 30,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+          className="portfolio-swiper"
+        >
+          {props.portfolioData.map((project, projectIndex) => (
+            <SwiperSlide key={projectIndex}>
+              <div
+                className="portfolio-item"
+                onClick={() => setSelectedProject(project)}
+              >
+                {/* Conditional rendering for slider or single media */}
+                {project.media.length > 1 ? (
+                  <MediaSlider media={project.media} title={project.title} />
                 ) : (
-                  <LazyImage
-                    src={project.media[0].src}
-                    alt={`${project.title} project screenshot`}
-                    className={`portfolio-media image ${
-                      project.media[0].isLong ? "long-image" : ""
-                    }`}
-                  />
-                )}
-              </div>
-            )}
-
-            <div className="portfolio-content">
-              <h3 className="portfolio-title">{project.title}</h3>
-              <p className="portfolio-description">{project.description}</p>
-              <div className="portfolio-technologies">
-                {project.technologies.map((tech, techIndex) => (
-                  <div className="portfolio-tech-item" key={techIndex}>
-                    <img
-                      src={tech.icon}
-                      alt={tech.name}
-                      className="tech-icon"
-                    />
-                    <span className="tech-name">{tech.name}</span>
+                  <div className="portfolio-media-container">
+                    {project.media[0].type === "video" ? (
+                      <video
+                        controls
+                        src={project.media[0].src}
+                        className="portfolio-media video"
+                        aria-label={`${project.title} demonstration video`}
+                      >
+                        <p>Your browser doesn't support HTML5 video. <a href={project.media[0].src}>Download the video</a> instead.</p>
+                      </video>
+                    ) : (
+                      <LazyImage
+                        src={project.media[0].src}
+                        alt={`${project.title} project screenshot`}
+                        className={`portfolio-media image ${
+                          project.media[0].isLong ? "long-image" : ""
+                        }`}
+                      />
+                    )}
                   </div>
-                ))}
+                )}
+
+                <div className="portfolio-content">
+                  <h3 className="portfolio-title">{project.title}</h3>
+                  <p className="portfolio-description">{project.description}</p>
+                  <div className="portfolio-technologies">
+                    {project.technologies.map((tech, techIndex) => (
+                      <div className="portfolio-tech-item" key={techIndex}>
+                        <img
+                          src={tech.icon}
+                          alt={tech.name}
+                          className="tech-icon"
+                        />
+                        <span className="tech-name">{tech.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
 
