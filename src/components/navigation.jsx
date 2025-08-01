@@ -17,7 +17,7 @@ export const Navigation = (props) => {
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
             <img
-              src="img/logo-nobg.png"
+              src="img/logo.svg"
               alt="Zavrosh Company Logo"
               style={{ height: "50px", marginRight: "10px" }}
             />

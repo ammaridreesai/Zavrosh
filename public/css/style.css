@@ -385,7 +385,7 @@ header .intro-text {
 }
 
 #about img {
-  margin-top: -60px;
+  /* margin-top: -60px; */
   /* background: #fff; */
   background: #e6f0f9;
   border-right: 0;

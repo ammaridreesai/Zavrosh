@@ -8,7 +8,7 @@ export const About = (props) => {
         <div className="row">
           <div className="col-12 col-md-6">
             <LazyImage
-              src="img/logo-nobg.png"
+              src="img/logo.svg"
               className="img-fluid bg-black"
               alt="Zavrosh company logo"
             />
