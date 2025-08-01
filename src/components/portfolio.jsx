@@ -19,7 +19,7 @@ const Portfolio = (props) => {
     <>
     <section className="portfolio-section">
      <div className="section-title text-center">
-          <h2>My Portfolio</h2>
+          <h2>Our Portfolio</h2>
         </div>
       <div className="portfolio-slider-container">
         <Swiper
@@ -32,7 +32,7 @@ const Portfolio = (props) => {
             dynamicBullets: true
           }}
           autoplay={{
-            delay: 4000,
+            delay: 400000,
             disableOnInteraction: false,
           }}
           effect="coverflow"

@@ -34,13 +34,13 @@ export const Contact = (props) => {
       .then(
         (result) => {
           setSubmitSuccess(true);
-          showNotification('Message sent successfully! 🚀', 'success');
+          showNotification('Message sent successfully!', 'success');
           clearState();
           e.target.reset();
           setIsSubmitting(false);
         },
         (error) => {
-          showNotification('Failed to send message. Please try again. 😢', 'error');
+          showNotification('Failed to send message. Please try again.', 'error');
           console.error('EmailJS error:', error);
           setIsSubmitting(false);
         }
@@ -93,9 +93,9 @@ export const Contact = (props) => {
                 </p>
               </div>
 
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage" className="contact-us-form" validate onSubmit={handleSubmit}>
                 <div className="row">
-                  <div className="col-md-6">
+                  <div className="contact-us-col col-md-6">
                     <div className="form-group">
                       <input
                         type="text"
@@ -109,7 +109,7 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="contact-us-col col-md-6">
                     <div className="form-group">
                       <input
                         type="email"
@@ -168,7 +168,7 @@ export const Contact = (props) => {
                 </p>
                 <div className="booking-widget">
                   <iframe
-                    src="https://calendly.com/syedzubair95590/kick-off" // Replace with your Calendly link
+                    src="https://calendly.com/seducecode/kick-off" // Replace with your Calendly link
                     width="100%"
                     height="600"
                     frameBorder="0"

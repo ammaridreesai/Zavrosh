@@ -111,7 +111,7 @@ hr {
 
 /* Navigation */
 #menu {
-  padding: 15px;
+  padding: 8px;
   transition: all 0.8s;
 }
 
@@ -119,6 +119,7 @@ hr {
   background-color: #e6f0f9;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 0;
 }
 
 #menu a.navbar-brand {
@@ -1702,7 +1703,7 @@ body.zoom-active {
 }
 
 .portfolio-description {
-  font-size: 1em;
+  font-size: 14px;
   line-height: 1.6;
   color: #555;
   margin-bottom: 20px;
@@ -2536,7 +2537,7 @@ body.zoom-active {
 }
 
 .magical-paragraph {
-  font-size: 1.3rem !important;
+  font-size: 1.6rem !important;
   line-height: 1.8 !important;
   color: rgba(255, 255, 255, 0.9) !important;
   max-width: 600px !important;
@@ -2763,7 +2764,7 @@ body.zoom-active {
   }
   
   .magical-paragraph {
-    font-size: 1.1rem !important;
+    font-size: 1.6rem !important;
   }
 }
 
@@ -3263,7 +3264,7 @@ body.zoom-active {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   overflow: hidden;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 #about::before {
@@ -3303,7 +3304,7 @@ body.zoom-active {
 }
 
 #about .about-text p {
-  font-size: 1.1rem !important;
+  font-size: 1.5rem !important;
   line-height: 1.8 !important;
   color: rgba(255, 255, 255, 0.9) !important;
   margin-bottom: 25px !important;
@@ -3337,7 +3338,7 @@ body.zoom-active {
   position: relative !important;
   padding: 10px 0 10px 40px !important;
   color: rgba(255, 255, 255, 0.9) !important;
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
   line-height: 1.6 !important;
   animation: aboutListSlide 0.8s ease-out both;
 }
@@ -4416,13 +4417,13 @@ body.zoom-active {
 }
 
 .features-subtitle {
-  font-size: 1.3rem !important;
-  color: rgba(255, 255, 255, 0.95) !important;
+  font-size: 1.5rem !important;
+  /* color: rgba(255, 255, 255, 0.95) !important; */
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
   animation: subtitleFadeIn 1s ease-out 0.3s both;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); */
 }
 
 @keyframes subtitleFadeIn {
@@ -4439,7 +4440,7 @@ body.zoom-active {
 /* Showcase Grid */
 .features-showcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px;
   max-width: 1400px;
   margin: 0 auto;
@@ -4649,7 +4650,7 @@ body.zoom-active {
 
 .showcase-description {
   color: #4a5568 !important;
-  font-size: 1rem !important;
+  font-size: 1.5rem !important;
   line-height: 1.6;
   margin-bottom: 30px;
   flex: 1;
@@ -4792,7 +4793,7 @@ body.zoom-active {
   }
   
   .features-subtitle {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
     padding: 0 20px;
   }
   
@@ -4942,4 +4943,12 @@ body.zoom-active {
   #about, #services, #contact {
     padding: 60px 0 40px;
   }
+}
+
+.contact-us-col{
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact-us-form .form-group {
+  padding: 0 10px !important;
 }

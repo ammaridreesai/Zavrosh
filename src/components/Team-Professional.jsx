@@ -169,7 +169,7 @@ export const TeamProfessional = (props) => {
                 <p className="member-role-pro">{member.job}</p>
                 
                 <div className="expertise-tags">
-                  {['Expert', 'Leader', 'Innovator'].map((tag, i) => (
+                  {member.specs.map((tag, i) => (
                     <span 
                       key={tag} 
                       className="expertise-tag"
@@ -182,11 +182,11 @@ export const TeamProfessional = (props) => {
 
                 <div className="member-stats-pro">
                   <div className="stat-item-pro">
-                    <span className="stat-number">5+</span>
+                    <span className="stat-number">{member.experience}</span>
                     <span className="stat-label">Years</span>
                   </div>
                   <div className="stat-item-pro">
-                    <span className="stat-number">50+</span>
+                    <span className="stat-number">{member.projects}</span>
                     <span className="stat-label">Projects</span>
                   </div>
                 </div>
