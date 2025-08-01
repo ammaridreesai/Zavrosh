@@ -292,24 +292,24 @@
   },
   "Features": [
     {
-      "icon": "fa fa-stethoscope",
+      "icon": "fa fa-heartbeat",
       "title": "Healthcare",
       "text": "We get deep inside healthcare, building patient portals so tight and secure, AI that knows exactly where to poke, and telemedicine that hits all the right spots, fast and precise."
     },
     {
-      "icon": "fa fa-university",
+      "icon": "fa fa-credit-card",
       "title": "Finance & Banking",
       "text": "From fat wallets to sniffing out fraud like a pro, we craft software that handles your cash with tight security and keeps the financial game wet and wild."
     },
     {
-      "icon": "fa fa-shopping-cart",
+      "icon": "fa fa-cube",
       "title": "E-Commerce & Retail",
       "text": "We build online stores that make your customers come back begging, with horny product suggestions and slick checkout moves that never miss a beat."
     },
     {
-      "icon": "fa fa-truck",
+      "icon": "fa fa-plane",
       "title": "Logistics & Supply Chain",
-      "text": "We keep your shipments moving hard and fast, with real-time tracking, automated warehouses that never get lazy, and AI routes so smooth it’ll make your head spin."
+      "text": "We keep your shipments moving hard and fast, with real-time tracking, automated warehouses that never get lazy, and AI routes so smooth it'll make your head spin."
     }
   ],
   "Portfolio": [

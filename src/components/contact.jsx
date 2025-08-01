@@ -44,9 +44,25 @@ export const Contact = (props) => {
         <div className="container">
           <div className="col-md-8">
             <div className="row">
-              <div className="section-title">
-                <h2>Ready to Play? Let’s Talk</h2>
-                <p>
+              <div className="section-title contact-hero">
+                <div className="contact-title-wrapper">
+                  <div className="contact-icon-group">
+                    <i className="fa fa-rocket contact-icon-1"></i>
+                    <i className="fa fa-heart contact-icon-2"></i>
+                    <i className="fa fa-comments contact-icon-3"></i>
+                  </div>
+                  <h2 className="gradient-text animated-title">
+                    <span className="title-line-1">Ready to Play?</span>
+                    <span className="title-line-2">Let's Talk</span>
+                  </h2>
+                  <div className="title-underline">
+                    <div className="underline-dot"></div>
+                    <div className="underline-line"></div>
+                    <div className="underline-dot"></div>
+                  </div>
+                </div>
+                <p className="contact-description">
+                  <i className="fa fa-magic description-icon"></i>
                   Got a question, a project, or just wanna slide into our DMs? Fill out the form below — whether you want a quickie or a long-term play, we promise to blow your mind and reply faster than your WiFi cuts out right before the best part.
                 </p>
               </div>
