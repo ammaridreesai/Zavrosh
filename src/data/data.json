@@ -1,7 +1,7 @@
 {
   "Header": {
     "title": "Welcome to Seduce Code",
-    "paragraph": "We’ll go deep… front-end, back-end, every end."
+    "paragraph": "We satisfy your front-end as well as backend needs."
   },
   "About": {
     "paragraph": "At SeduceCode, we don’t just build software — we make it irresistible. Intelligent, scalable, and built to perform, our web apps, mobile magic, and AI platforms know exactly how to please. We mix creativity with tech to get you results that feel just right… every single time.",
@@ -164,47 +164,47 @@
     }
   ],
   "Services": [
-  {
-    "icon": "fa fa-gamepad",
-    "name": "Game Development",
-    "text": "From the first tease to the final level, we craft games that keep players hooked — mastering every move and combo."
-  },
-  {
-    "icon": "fa fa-code",
-    "name": "Web Development",
-    "text": "We build sleek, responsive sites that grab attention and keep your audience engaged — no matter how deep they want to go."
-  },
-  {
-    "icon": "fa fa-mobile",
-    "name": "Mobile App Development",
-    "text": "Apps so smooth and intuitive, they fit perfectly in users’ hands and never miss a beat — always ready for a quick session."
-  },
-  {
-    "icon": "fa fa-magic",
-    "name": "AI Integration",
-    "text": "We bring in AI that learns your moves, anticipates your needs, and keeps your business running like a well-oiled machine."
-  },
-  {
-    "icon": "fa fa-link",
-    "name": "Blockchain Development",
-    "text": "Secure and unbreakable chains that lock down your assets tight — keeping everything honest and ready for any transaction."
-  },
-  {
-    "icon": "fa fa-cogs",
-    "name": "Custom Software Development",
-    "text": "Tailor-made solutions designed to fit your unique desires — engineered to perform and built to satisfy every demand."
-  },
-  {
-    "icon": "fa fa-cloud",
-    "name": "Cloud Solutions",
-    "text": "Cloud-native apps that keep your systems flowing, scaling, and hitting the right spots, no matter how intense the load."
-  },
-  {
-    "icon": "fa fa-shield",
-    "name": "Cybersecurity Services",
-    "text": "We protect your data and digital secrets like a trusted partner — always watching, always ready to defend your interests."
-  }
-],
+    {
+      "icon": "fa fa-gamepad",
+      "name": "Game Development",
+      "text": "From the first tease to the final level, we craft games that keep players hooked — mastering every move and combo."
+    },
+    {
+      "icon": "fa fa-code",
+      "name": "Web Development",
+      "text": "We build sleek, responsive sites that grab attention and keep your audience engaged — no matter how deep they want to go."
+    },
+    {
+      "icon": "fa fa-mobile",
+      "name": "Mobile App Development",
+      "text": "Apps so smooth and intuitive, they fit perfectly in users’ hands and never miss a beat — always ready for a quick session."
+    },
+    {
+      "icon": "fa fa-magic",
+      "name": "AI Integration",
+      "text": "We bring in AI that learns your moves, anticipates your needs, and keeps your business running like a well-oiled machine."
+    },
+    {
+      "icon": "fa fa-link",
+      "name": "Blockchain Development",
+      "text": "Secure and unbreakable chains that lock down your assets tight — keeping everything honest and ready for any transaction."
+    },
+    {
+      "icon": "fa fa-cogs",
+      "name": "Custom Software Development",
+      "text": "Tailor-made solutions designed to fit your unique desires — engineered to perform and built to satisfy every demand."
+    },
+    {
+      "icon": "fa fa-cloud",
+      "name": "Cloud Solutions",
+      "text": "Cloud-native apps that keep your systems flowing, scaling, and hitting the right spots, no matter how intense the load."
+    },
+    {
+      "icon": "fa fa-shield",
+      "name": "Cybersecurity Services",
+      "text": "We protect your data and digital secrets like a trusted partner — always watching, always ready to defend your interests."
+    }
+  ],
 
   "Testimonials": [
     {
@@ -290,216 +290,219 @@
       "text": "We keep your shipments moving hard and fast, with real-time tracking, automated warehouses that never get lazy, and AI routes so smooth it’ll make your head spin."
     }
   ],
-  "Portfolio":  [
-      {
-        "media": [{
+  "Portfolio": [
+    {
+      "media": [
+        {
           "type": "video",
           "src": "img/portfolio/lawvocate.mp4"
-        }],
-        "title": "Lawvocate.AI",
-        "technologies": [
-          {
-            "name": "React",
-            "icon": "img/portfolio/atom.png"
-          },
-          {
-            "name": "Node.js",
-            "icon": "img/portfolio/node.png"
-          },
-          {
-            "name": "Mango DB",
-            "icon": "img/portfolio/mango.png"
-          }
-        ],
-        "description": "Lawvocate.ai equips businesses with white-labeled AI tools for seamless legal and business services. Boost efficiency, cut costs, and stay ahead with smart, AI-driven solutions!"
-      },
-      {
-        "media": [{
+        }
+      ],
+      "title": "Lawvocate.AI",
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "img/portfolio/atom.png"
+        },
+        {
+          "name": "Node.js",
+          "icon": "img/portfolio/node.png"
+        },
+        {
+          "name": "Mango DB",
+          "icon": "img/portfolio/mango.png"
+        }
+      ],
+      "description": "Lawvocate.ai equips businesses with white-labeled AI tools for seamless legal and business services. Boost efficiency, cut costs, and stay ahead with smart, AI-driven solutions!"
+    },
+    {
+      "media": [
+        {
           "type": "image",
           "src": "img/portfolio/fryfarm.jpeg"
-        }],
-        "title": "Fry.Farm",
-        "technologies": [
-          {
-            "name": "React",
-            "icon": "img/portfolio/atom.png"
-          },
-          {
-            "name": "TypeScript",
-            "icon": "img/portfolio/typescript.png"
-          },
-          {
-            "name": "Next JS",
-            "icon": "img/portfolio/next-js.svg"
-          },
-          {
-            "name": "Node.js",
-            "icon": "img/portfolio/node.png"
-          },
-          {
-            "name": "SQL",
-            "icon": "img/portfolio/sql.png"
-          }
-        ],
-        "description": "Fry.farm makes staking ASA tokens easy! Earn big rewards, enjoy high APRs, and grow your assets—all while staying secure with smart contracts."
-      },
-      {
-        "media": [
-          {
-            "type": "image",
-            "src": "img/portfolio/streetartist1.png",
-            "isLong": true
-          },
-          {
-            "type": "image",
-            "src": "img/portfolio/streetartist2.png",
-            "isLong": true
-          }
-        ],
-        "title": "Street Artist",
-        "technologies": [
-          {
-            "name": "React",
-            "icon": "img/portfolio/atom.png"
-          },
-          {
-            "name": "Next JS",
-            "icon": "img/portfolio/next-js.svg"
-          },
-          {
-            "name": "Tailwind CSS",
-            "icon": "img/portfolio/tailwind.png"
-          },
-          {
-            "name": "Mango DB",
-            "icon": "img/portfolio/mango.png"
-          }
-        ],
-        "description": "Street Artist lets users share and discover street art, complete with photos and location details from around the world."
-      },
-      {
-        "media": [
-          {
-            "type": "image",
-            "src": "img/portfolio/ADM1.jpg",
-            "isLong": true
-          },
-          {
-            "type": "image",
-            "src": "img/portfolio/ADM2.jpg",
-            "isLong": true
-          },
-          {
-            "type": "image",
-            "src": "img/portfolio/ADM3.png",
-            "isLong": true
-          }
-        ],
-        "title": "ADM - ECommerce",
-        "technologies": [
-          {
-            "name": "Angular JS",
-            "icon": "img/portfolio/angular.png"
-          },
-          {
-            "name": "Tailwind CSS",
-            "icon": "img/portfolio/tailwind.png"
-          },
-          {
-            "name": "C#",
-            "icon": "img/portfolio/csharp.png"
-          },
-          {
-            "name": "ASP .Net",
-            "icon": "img/portfolio/dotnet.png"
-          },
-          {
-            "name": "SQL",
-            "icon": "img/portfolio/sql.png"
-          }
-        ],
-        "description": "ADM – ECommerce is a platform for managing and selling products online, enabling businesses to showcase items, process orders, and reach customers with ease."
-      },
-      {
-        "media": [
-          {
-            "type": "image",
-            "src": "img/portfolio/barbados/barbados3.png",
-            "isLong": true
-          },
-          {
-            "type": "image",
-            "src": "img/portfolio/barbados/barbados4.png"
-          },
-          {
-            "type": "image",
-            "src": "img/portfolio/barbados/barbados2.png",
-            "isLong": true
-          },
-          {
-            "type": "image",
-            "src": "img/portfolio/barbados/barbados1.png",
-            "isLong": true
-          }
-        ],
-        "title": "Data Protection Commission",
-        "technologies": [
-          {
-            "name": "React",
-            "icon": "img/portfolio/atom.png"
-          },
-          {
-            "name": "Next JS",
-            "icon": "img/portfolio/next-js.svg"
-          },
-          {
-            "name": "Bootstrap",
-            "icon": "img/portfolio/bootstrap.jpg"
-          },
-          {
-            "name": "ASP .Net",
-            "icon": "img/portfolio/dotnet.png"
-          },
-          {
-            "name": "Figma",
-            "icon": "img/portfolio/figma.png"
-          }
-        ],
-        "description": "Data Protection Commission provides comprehensive data protection services and compliance solutions for businesses in Barbados, ensuring regulatory adherence and data security."
-      },
-      {
-        "media": [
-          {
-            "type": "image",
-            "src": "img/portfolio/eLearning.png",
-            "isLong": true
-          }
-        ],
-        "title": "E-Learning Library",
-        "technologies": [
-          {
-            "name": "React",
-            "icon": "img/portfolio/atom.png"
-          },
-          {
-            "name": "TypeScript",
-            "icon": "img/portfolio/typescript.png"
-          },
-          {
-            "name": "Node.js",
-            "icon": "img/portfolio/node.png"
-          },
-          {
-            "name": "Mango DB",
-            "icon": "img/portfolio/mango.png"
-          },
-          {
-            "name": "Express JS",
-            "icon": "img/portfolio/express.png"
-          }
-        ],
-        "description": "E‑Learning Library is an online platform offering a collection of courses, tutorials, and learning resources to support skill development anytime, anywhere."
-      }
-    ]
-  
+        }
+      ],
+      "title": "Fry.Farm",
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "img/portfolio/atom.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "img/portfolio/typescript.png"
+        },
+        {
+          "name": "Next JS",
+          "icon": "img/portfolio/next-js.svg"
+        },
+        {
+          "name": "Node.js",
+          "icon": "img/portfolio/node.png"
+        },
+        {
+          "name": "SQL",
+          "icon": "img/portfolio/sql.png"
+        }
+      ],
+      "description": "Fry.farm makes staking ASA tokens easy! Earn big rewards, enjoy high APRs, and grow your assets—all while staying secure with smart contracts."
+    },
+    {
+      "media": [
+        {
+          "type": "image",
+          "src": "img/portfolio/streetartist1.png",
+          "isLong": true
+        },
+        {
+          "type": "image",
+          "src": "img/portfolio/streetartist2.png",
+          "isLong": true
+        }
+      ],
+      "title": "Street Artist",
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "img/portfolio/atom.png"
+        },
+        {
+          "name": "Next JS",
+          "icon": "img/portfolio/next-js.svg"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "img/portfolio/tailwind.png"
+        },
+        {
+          "name": "Mango DB",
+          "icon": "img/portfolio/mango.png"
+        }
+      ],
+      "description": "Street Artist lets users share and discover street art, complete with photos and location details from around the world."
+    },
+    {
+      "media": [
+        {
+          "type": "image",
+          "src": "img/portfolio/ADM1.jpg",
+          "isLong": true
+        },
+        {
+          "type": "image",
+          "src": "img/portfolio/ADM2.jpg",
+          "isLong": true
+        },
+        {
+          "type": "image",
+          "src": "img/portfolio/ADM3.png",
+          "isLong": true
+        }
+      ],
+      "title": "ADM - ECommerce",
+      "technologies": [
+        {
+          "name": "Angular JS",
+          "icon": "img/portfolio/angular.png"
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "img/portfolio/tailwind.png"
+        },
+        {
+          "name": "C#",
+          "icon": "img/portfolio/csharp.png"
+        },
+        {
+          "name": "ASP .Net",
+          "icon": "img/portfolio/dotnet.png"
+        },
+        {
+          "name": "SQL",
+          "icon": "img/portfolio/sql.png"
+        }
+      ],
+      "description": "ADM – ECommerce is a platform for managing and selling products online, enabling businesses to showcase items, process orders, and reach customers with ease."
+    },
+    {
+      "media": [
+        {
+          "type": "image",
+          "src": "img/portfolio/barbados/barbados3.png",
+          "isLong": true
+        },
+        {
+          "type": "image",
+          "src": "img/portfolio/barbados/barbados4.png"
+        },
+        {
+          "type": "image",
+          "src": "img/portfolio/barbados/barbados2.png",
+          "isLong": true
+        },
+        {
+          "type": "image",
+          "src": "img/portfolio/barbados/barbados1.png",
+          "isLong": true
+        }
+      ],
+      "title": "Data Protection Commission",
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "img/portfolio/atom.png"
+        },
+        {
+          "name": "Next JS",
+          "icon": "img/portfolio/next-js.svg"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "img/portfolio/bootstrap.jpg"
+        },
+        {
+          "name": "ASP .Net",
+          "icon": "img/portfolio/dotnet.png"
+        },
+        {
+          "name": "Figma",
+          "icon": "img/portfolio/figma.png"
+        }
+      ],
+      "description": "Data Protection Commission provides comprehensive data protection services and compliance solutions for businesses in Barbados, ensuring regulatory adherence and data security."
+    },
+    {
+      "media": [
+        {
+          "type": "image",
+          "src": "img/portfolio/eLearning.png",
+          "isLong": true
+        }
+      ],
+      "title": "E-Learning Library",
+      "technologies": [
+        {
+          "name": "React",
+          "icon": "img/portfolio/atom.png"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "img/portfolio/typescript.png"
+        },
+        {
+          "name": "Node.js",
+          "icon": "img/portfolio/node.png"
+        },
+        {
+          "name": "Mango DB",
+          "icon": "img/portfolio/mango.png"
+        },
+        {
+          "name": "Express JS",
+          "icon": "img/portfolio/express.png"
+        }
+      ],
+      "description": "E‑Learning Library is an online platform offering a collection of courses, tutorials, and learning resources to support skill development anytime, anywhere."
+    }
+  ]
 }
