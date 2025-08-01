@@ -1,3 +1,578 @@
+/* Contact Page Magic Animations & Transitions */
+#contact {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  min-height: 100vh;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  animation: shimmerBg 3s infinite;
+  z-index: 1;
+}
+
+@keyframes shimmerBg {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Contact Hero Section */
+.contact-hero {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-title-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.contact-icon-group {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 3;
+}
+
+.contact-icon-1, .contact-icon-2, .contact-icon-3 {
+  font-size: 24px;
+  color: #ffd700;
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+.contact-icon-2 {
+  animation-delay: 0.5s;
+  color: #ff6b6b;
+}
+
+.contact-icon-3 {
+  animation-delay: 1s;
+  color: #4ecdc4;
+}
+
+@keyframes floatIcon {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ffd700, #ff6b6b, #4ecdc4, #45b7d1);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease infinite;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 30px rgba(255,255,255,0.3);
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-title {
+  perspective: 1000px;
+}
+
+.title-line-1, .title-line-2 {
+  display: block;
+  transform-origin: center;
+  animation: titleReveal 1s ease-out forwards;
+  opacity: 0;
+}
+
+.title-line-2 {
+  animation-delay: 0.3s;
+}
+
+@keyframes titleReveal {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg) translateY(0px);
+  }
+}
+
+.title-underline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  opacity: 0;
+  animation: underlineAppear 1s ease-out 0.8s forwards;
+}
+
+.underline-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffd700;
+  animation: pulse 2s infinite;
+}
+
+.underline-line {
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd700, transparent);
+  animation: lineGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes underlineAppear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.7; }
+}
+
+@keyframes lineGlow {
+  from { box-shadow: 0 0 5px #ffd700; }
+  to { box-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700; }
+}
+
+.contact-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-top: 30px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 1.2s forwards;
+  position: relative;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.description-icon {
+  color: #ffd700;
+  margin-right: 10px;
+  animation: magicSpin 3s linear infinite;
+}
+
+@keyframes magicSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form Magic */
+form {
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  opacity: 0;
+  transform: translateY(50px);
+  animation: formReveal 1s ease-out 1.5s forwards;
+}
+
+@keyframes formReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.form-control {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  padding: 15px 20px;
+  width: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.form-control::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #ffd700;
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 0 25px rgba(255,215,0,0.3);
+  transform: translateY(-2px);
+}
+
+.form-group::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #ffd700, #ff6b6b, #4ecdc4);
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+.form-group:focus-within::after {
+  width: 100%;
+}
+
+.form-control:focus + .form-control,
+.form-control:focus {
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Magic Button */
+.btn-custom {
+  background: linear-gradient(135deg, #ff6b6b, #ffd700, #4ecdc4);
+  background-size: 300% 300%;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 40px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  animation: buttonGradient 3s ease infinite;
+}
+
+@keyframes buttonGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.btn-custom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.btn-custom:hover::before {
+  left: 100%;
+}
+
+.btn-custom:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.btn-custom.submitting {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  cursor: not-allowed;
+  transform: scale(0.98);
+}
+
+.btn-custom.success {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+  animation: successPulse 0.6s ease;
+}
+
+@keyframes successPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+/* Magic Notifications */
+.magic-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  transform: translateX(400px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+}
+
+.magic-notification.success {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+}
+
+.magic-notification.error {
+  background: linear-gradient(135deg, #e17055, #fd79a8);
+}
+
+.magic-notification.show {
+  transform: translateX(0);
+}
+
+/* Contact Info Magic */
+.contact-info {
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255,255,255,0.2);
+  margin-top: 50px;
+  opacity: 0;
+  animation: slideInRight 1s ease-out 1.8s forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.contact-item:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateX(10px);
+}
+
+.contact-item:hover::before {
+  left: 100%;
+}
+
+.contact-item i {
+  color: #ffd700;
+  margin-right: 15px;
+  font-size: 20px;
+  animation: iconBounce 2s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+.contact-item h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Social Media Magic */
+.social {
+  text-align: center;
+  margin-top: 50px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 2s forwards;
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.social li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.social li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3), transparent);
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+
+.social li a:hover {
+  transform: translateY(-10px) rotate(15deg) scale(1.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.social li a:hover::before {
+  transform: scale(1);
+}
+
+/* Booking Widget Enhancement */
+.booking-widget {
+  margin-top: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 2.2s forwards;
+  position: relative;
+}
+
+.booking-widget::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #ffd700, #ff6b6b, #4ecdc4, #45b7d1);
+  background-size: 400% 400%;
+  animation: gradientFlow 3s ease infinite;
+  z-index: 1;
+}
+
+.booking-widget iframe {
+  border-radius: 0 0 20px 20px;
+  position: relative;
+  z-index: 0;
+}
+
+/* Floating Particles */
+#contact::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, rgba(255,215,0,0.3), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(255,107,107,0.3), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(78,205,196,0.3), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(69,183,209,0.3), transparent),
+    radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,0.3), transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  animation: particleFloat 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes particleFloat {
+  from { background-position: 0% 0%; }
+  to { background-position: 100% 100%; }
+}
+
+/* Responsive Magic */
+@media (max-width: 768px) {
+  .gradient-text {
+    font-size: 2.5rem;
+  }
+  
+  .contact-icon-group {
+    position: relative;
+    top: 0;
+    transform: none;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+  }
+  
+  .social ul {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .social li a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
 /* General Responsive Base Styles */
 * {
   box-sizing: border-box;

@@ -1,15 +1,12 @@
-import React from "react";
-import LazyImage from './LazyImage';
+import React from 'react';
 
-export const Image = ({ title, largeImage, smallImage }) => {
+export const Image = ({ title, largeImage, smallImage, className }) => {
   return (
-    <div className="portfolio-item">
-      <div>
-        {" "}
-        <a href={largeImage} title={title} data-lightbox-gallery="gallery1">
-          <LazyImage src={smallImage} className="img-fluid" alt={`${title} technology icon`} />
-        </a>{" "}
-      </div>
-    </div>
+    <img 
+      src={smallImage || largeImage} 
+      alt={title} 
+      className={className}
+      loading="lazy"
+    />
   );
 };

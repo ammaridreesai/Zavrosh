@@ -6,8 +6,11 @@ const initialState = {
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,23 +23,46 @@ export const Contact = (props) => {
     e.preventDefault();
     
     if (!name.trim() || !email.trim() || !message.trim()) {
-      alert('Please fill in all fields');
+      showNotification('Please fill in all fields', 'error');
       return;
     }
+
+    setIsSubmitting(true);
 
     emailjs
       .sendForm("service_4t0520f", "template_ysuvx0g", e.target, "IQRWrnLskn2jksLh4")
       .then(
         (result) => {
-          alert('Message sent successfully!');
+          setSubmitSuccess(true);
+          showNotification('Message sent successfully! 🚀', 'success');
           clearState();
           e.target.reset();
+          setIsSubmitting(false);
         },
         (error) => {
-          alert('Failed to send message. Please try again.');
+          showNotification('Failed to send message. Please try again. 😢', 'error');
           console.error('EmailJS error:', error);
+          setIsSubmitting(false);
         }
       );
+  };
+
+  const showNotification = (message, type) => {
+    const notification = document.createElement('div');
+    notification.className = `magic-notification ${type}`;
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+      notification.classList.add('show');
+    }, 100);
+    
+    setTimeout(() => {
+      notification.classList.remove('show');
+      setTimeout(() => {
+        document.body.removeChild(notification);
+      }, 300);
+    }, 3000);
   };
   return (
     <div>
@@ -111,8 +137,27 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                <button 
+                  type="submit" 
+                  className={`btn btn-custom btn-lg ${isSubmitting ? 'submitting' : ''} ${submitSuccess ? 'success' : ''}`}
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <span className="spinner"></span>
+                      Sending Magic...
+                    </>
+                  ) : submitSuccess ? (
+                    <>
+                      <i className="fa fa-check"></i>
+                      Sent Successfully!
+                    </>
+                  ) : (
+                    <>
+                      <i className="fa fa-paper-plane"></i>
+                      Send Message
+                    </>
+                  )}
                 </button>
               </form>
 

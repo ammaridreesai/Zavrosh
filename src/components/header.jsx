@@ -23,11 +23,18 @@ export const Header = (props) => {
                   <h1 className="magical-title">
                     {props.data ? (
                       <span className="title-words">
-                        {props.data.title.split(' ').map((word, index) => (
-                          <span key={index} className={`title-word word-${index + 1}`}>
-                            {word}
-                          </span>
-                        ))}
+                        {props.data.title.split(' ').map((word, index) => {
+                          const shouldHighlight = word.toLowerCase() === 'seduce' || word.toLowerCase() === 'code';
+                          return (
+                            <span 
+                              key={index} 
+                              className={`title-word word-${index + 1} ${shouldHighlight ? 'highlight' : ''}`} 
+                              style={{ '--delay': `${(index + 1) * 0.1}s` }}
+                            >
+                              {word}
+                            </span>
+                          );
+                        })}
                       </span>
                     ) : (
                       <span className="title-word">Loading</span>
