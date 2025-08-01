@@ -241,12 +241,17 @@
     {
       "img": "img/team/ammar.jpeg",
       "name": "Ammar Idrees",
-      "job": "MERN Stack Developer"
+      "job": "CEO"
     },
     {
       "img": "img/team/zubair.png",
       "name": "Syed Zubair Bukhari",
-      "job": "Full Stack Developer"
+      "job": "CTO"
+    },
+    {
+      "img": "img/team/was.jpeg",
+      "name": "Waseem Ali",
+      "job": "Solution Architech"
     },
     {
       "img": "img/team/ihtishamali.png",
@@ -257,6 +262,24 @@
       "img": "img/team/hashim.jpg",
       "name": "Syed Hashim Raza",
       "job": "Flutter Developer"
+    },
+
+    {
+      "img": "img/team/akash.jpeg",
+      "name": "Syed Akash Mazhar",
+      "job": "MERN Stack Developer"
+    },
+
+    {
+      "img": "img/team/usama.jpg",
+      "name": "Usama Idrees",
+      "job": "IT Support Analyst"
+    },
+
+    {
+      "img": "img/team/hammad.jpg",
+      "name": "Hammad Akram",
+      "job": "React JS Developer"
     }
   ],
   "Contact": {
