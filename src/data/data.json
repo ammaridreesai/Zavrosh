@@ -205,7 +205,6 @@
       "text": "We protect your data and digital secrets like a trusted partner — always watching, always ready to defend your interests."
     }
   ],
-
   "Testimonials": [
     {
       "img": "https://randomuser.me/api/portraits/men/32.jpg",
@@ -240,24 +239,24 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "img": "img/team/ammar.jpeg",
+      "name": "Ammar Idrees",
+      "job": "MERN Stack Developer"
     },
     {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "img": "img/team/zubair.png",
+      "name": "Syed Zubair Bukhari",
+      "job": "Full Stack Developer"
     },
     {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "img": "img/team/ihtishamali.png",
+      "name": "Ihtisham Ali",
+      "job": "Full Stack Developer"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "img": "img/team/hashim.jpg",
+      "name": "Syed Hashim Raza",
+      "job": "Flutter Developer"
     }
   ],
   "Contact": {
