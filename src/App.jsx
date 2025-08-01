@@ -3,6 +3,7 @@ import { Navigation } from "./components/navigation";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import { TeamProfessional as Team } from './components/Team-Professional';
 
 // Lazy load components
 const Header = React.lazy(() =>
@@ -48,9 +49,9 @@ const Testimonials = React.lazy(() =>
     default: module.Testimonials,
   }))
 );
-const Team = React.lazy(() =>
-  import("./components/Team").then((module) => ({ default: module.Team }))
-);
+// const Team = React.lazy(() =>
+//   import("./components/Team").then((module) => ({ default: module.Team }))
+// );
 const Contact = React.lazy(() =>
   import("./components/contact").then((module) => ({ default: module.Contact }))
 );

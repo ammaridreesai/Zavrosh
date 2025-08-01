@@ -249,14 +249,14 @@
       "job": "CTO"
     },
     {
+      "img": "img/team/ihtishamali.png",
+      "name": "Ihtisham Ali",
+      "job": "Technical Director"
+    },
+    {
       "img": "img/team/was.jpeg",
       "name": "Waseem Ali",
       "job": "Solution Architech"
-    },
-    {
-      "img": "img/team/ihtishamali.png",
-      "name": "Ihtisham Ali",
-      "job": "Full Stack Developer"
     },
     {
       "img": "img/team/hashim.jpg",
