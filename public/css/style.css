@@ -4749,30 +4749,197 @@ body.zoom-active {
   }
 }
 
-/* Responsive Design */
+/* Enhanced Responsive Design */
 @media (max-width: 768px) {
+  /* Navigation fixes */
+  .navbar-brand img {
+    height: 35px !important;
+  }
+  
+  .navbar-nav {
+    margin-top: 10px;
+  }
+  
+  .navbar-collapse {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  /* Header section */
+  .intro {
+    padding: 120px 0 80px;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    font-size: 16px !important;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  /* Features section */
   .magical-features-v2 {
-    padding: 100px 0;
+    padding: 80px 0;
   }
   
   .features-main-title {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
   }
   
   .features-subtitle {
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
+    padding: 0 20px;
   }
   
   .features-showcase {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 25px;
+    padding: 0 20px;
   }
   
   .showcase-card {
-    padding: 30px 20px;
+    padding: 25px 20px;
   }
   
   .floating-element {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  /* About section */
+  #about {
+    padding: 80px 0;
+  }
+  
+  #about .container {
+    padding: 0 20px;
+  }
+
+  /* Services section */
+  #services {
+    padding: 80px 0;
+  }
+
+  /* Contact section */
+  #contact {
+    padding: 80px 0 40px;
+  }
+  
+  #contact .container {
+    padding: 0 20px;
+  }
+
+  /* General container improvements */
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Small mobile devices */
+  .navbar-brand img {
+    height: 30px !important;
+  }
+
+  .intro {
+    padding: 100px 0 60px;
+  }
+  
+  .intro h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+  
+  .intro p {
+    font-size: 14px !important;
+    padding: 0 15px;
+  }
+
+  .btn-custom {
+    padding: 12px 25px !important;
+    font-size: 14px !important;
+  }
+
+  .features-main-title {
+    font-size: 2rem !important;
+  }
+  
+  .features-subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  h3 {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small devices */
+  .intro h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .features-main-title {
+    font-size: 1.8rem !important;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .showcase-card {
+    padding: 20px 15px;
+  }
+
+  .btn-custom {
+    padding: 10px 20px !important;
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Very small devices */
+  .intro {
+    padding: 80px 0 50px;
+  }
+  
+  .intro h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .intro p {
+    font-size: 13px !important;
+  }
+
+  .features-main-title {
+    font-size: 1.6rem !important;
+  }
+
+  .magical-features-v2 {
+    padding: 60px 0;
+  }
+
+  #about, #services, #contact {
+    padding: 60px 0 40px;
   }
 }

@@ -22,9 +22,27 @@ const Services = React.lazy(() =>
   }))
 );
 const Portfolio = React.lazy(() => import("./components/portfolio"));
+// Choose one of these awesome tech display options:
+
+// Option 1: Orbital Tech System (Futuristic space theme)
 const Gallery = React.lazy(() =>
-  import("./components/gallery").then((module) => ({ default: module.Gallery }))
+  import("./components/gallery-orbital").then((module) => ({ default: module.OrbitalGallery }))
 );
+
+// Option 2: Interactive Categories (Modern with skill bars)
+// const Gallery = React.lazy(() =>
+//   import("./components/gallery-categories").then((module) => ({ default: module.CategorizedGallery }))
+// );
+
+// Option 3: 3D Hexagonal Grid (Futuristic 3D cards)
+// const Gallery = React.lazy(() =>
+//   import("./components/gallery-hexagonal").then((module) => ({ default: module.HexagonalGallery }))
+// );
+
+// Original Gallery (Simple grid)
+// const Gallery = React.lazy(() =>
+//   import("./components/gallery").then((module) => ({ default: module.Gallery }))
+// );
 const Testimonials = React.lazy(() =>
   import("./components/testimonials").then((module) => ({
     default: module.Testimonials,
