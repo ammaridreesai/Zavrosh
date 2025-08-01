@@ -1384,6 +1384,7 @@ body.zoom-active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   background: #fff;
   padding: 15px;
