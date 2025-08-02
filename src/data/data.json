@@ -241,51 +241,75 @@
     {
       "img": "img/team/ammar.jpeg",
       "name": "Ammar Idrees",
-      "job": "CEO"
+      "job": "CEO",
+      "experience": "5+",
+      "projects": "30+",
+      "specs": ["Expert", "Leader", "Innovator"]
     },
     {
       "img": "img/team/zubair.png",
       "name": "Syed Zubair Bukhari",
-      "job": "CTO"
+      "job": "CTO",
+      "experience": "5+",
+      "projects": "30+",
+      "specs": ["Expert", "Leader", "Innovator"]
     },
     {
       "img": "img/team/ihtishamali.png",
       "name": "Ihtisham Ali",
-      "job": "Technical Director"
+      "job": "Technical Director",
+      "experience": "5+",
+      "projects": "50+",
+      "specs": ["Expert", "Leader", "Innovator"]
     },
     {
       "img": "img/team/was.jpeg",
       "name": "Waseem Ali",
-      "job": "Solution Architech"
+      "job": "Solution Architech",
+      "experience": "5+",
+      "projects": "50+",
+      "specs": ["Expert", "Leader", "Innovator"]
     },
     {
       "img": "img/team/hashim.jpg",
       "name": "Syed Hashim Raza",
-      "job": "Flutter Developer"
+      "job": "Flutter Developer",
+      "experience": "5+",
+      "projects": "50+",
+      "specs": ["Expert", "Leader", "Innovator"]
     },
 
     {
       "img": "img/team/akash.jpeg",
       "name": "Syed Akash Mazhar",
-      "job": "MERN Stack Developer"
+      "job": "MERN Stack Developer",
+      "experience": "5+",
+      "projects": "50+",
+      "specs": ["Expert", "Leader", "Innovator"]
     },
 
     {
       "img": "img/team/usama.jpg",
       "name": "Usama Idrees",
-      "job": "IT Support Analyst"
+      "job": "IT Support Analyst",
+      "experience": "5+",
+      "projects": "50+",
+      "specs": ["Expert", "Leader", "Innovator"]
     },
 
     {
       "img": "img/team/hammad.jpg",
       "name": "Hammad Akram",
-      "job": "React JS Developer"
+      "job": "React JS Developer",
+      "experience": "5+",
+      "projects": "50+",
+      "specs": ["Expert", "Leader", "Innovator"]
     }
   ],
   "Contact": {
     "address": "G-7/1 Islamabad, Pakistan",
     "phone": "+92 304 8736 908",
-    "email": "ammaridrees.ai@gmail.com",
+    "email": "seducecode@gmail.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"

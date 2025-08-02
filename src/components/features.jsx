@@ -62,10 +62,10 @@ export const Features = (props) => {
                       <div className="title-underline"></div>
                       <p className="showcase-description">{d.text}</p>
                       
-                      <div className="card-action">
+                      {/* <div className="card-action">
                         <span className="action-text">Explore Expertise</span>
                         <div className="action-arrow">→</div>
-                      </div>
+                      </div> */}
                     </div>
                     
                     <div className="card-particles">
