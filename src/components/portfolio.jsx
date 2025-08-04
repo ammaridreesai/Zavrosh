@@ -17,7 +17,7 @@ const Portfolio = (props) => {
   }
   return (
     <>
-    <section className="portfolio-section">
+    <section id="portfolio" className="portfolio-section">
      <div className="section-title text-center">
           <h2>Our Portfolio</h2>
         </div>

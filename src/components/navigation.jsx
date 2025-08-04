@@ -68,12 +68,6 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#testimonials" className="page-scroll magical-nav-link">
-                <span className="nav-text">Testimonials</span>
-                <div className="nav-hover-effect"></div>
-              </a>
-            </li>
-            <li className="nav-item">
               <a href="#team" className="page-scroll magical-nav-link">
                 <span className="nav-text">Team</span>
                 <div className="nav-hover-effect"></div>
