@@ -405,7 +405,14 @@ header .intro-text {
 
 #services {
   padding: 100px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+  background: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #764ba2 25%,
+    #f093fb 50%,
+    #f5576c 75%,
+    #4facfe 100%
+  );
   background-size: 400% 400%;
   animation: gradientFlow 15s ease infinite;
   color: #fff;
@@ -414,7 +421,8 @@ header .intro-text {
 }
 
 @keyframes gradientFlow {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   25% {
@@ -459,7 +467,11 @@ header .intro-text {
   top: 10%;
   left: 10%;
   animation-duration: 25s;
-  background: linear-gradient(45deg, rgba(255, 107, 107, 0.3), rgba(255, 142, 83, 0.3));
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 107, 0.3),
+    rgba(255, 142, 83, 0.3)
+  );
 }
 
 .shape-2 {
@@ -469,7 +481,11 @@ header .intro-text {
   right: 15%;
   animation-duration: 30s;
   animation-direction: reverse;
-  background: linear-gradient(45deg, rgba(78, 205, 196, 0.3), rgba(68, 160, 141, 0.3));
+  background: linear-gradient(
+    45deg,
+    rgba(78, 205, 196, 0.3),
+    rgba(68, 160, 141, 0.3)
+  );
 }
 
 .shape-3 {
@@ -478,7 +494,11 @@ header .intro-text {
   bottom: 30%;
   left: 20%;
   animation-duration: 22s;
-  background: linear-gradient(45deg, rgba(168, 237, 234, 0.3), rgba(254, 214, 227, 0.3));
+  background: linear-gradient(
+    45deg,
+    rgba(168, 237, 234, 0.3),
+    rgba(254, 214, 227, 0.3)
+  );
 }
 
 .shape-4 {
@@ -488,7 +508,11 @@ header .intro-text {
   right: 25%;
   animation-duration: 28s;
   animation-direction: reverse;
-  background: linear-gradient(45deg, rgba(210, 153, 194, 0.3), rgba(254, 249, 215, 0.3));
+  background: linear-gradient(
+    45deg,
+    rgba(210, 153, 194, 0.3),
+    rgba(254, 249, 215, 0.3)
+  );
 }
 
 .shape-5 {
@@ -498,7 +522,11 @@ header .intro-text {
   left: 50%;
   transform: translate(-50%, -50%);
   animation-duration: 35s;
-  background: linear-gradient(45deg, rgba(79, 172, 254, 0.2), rgba(0, 242, 254, 0.2));
+  background: linear-gradient(
+    45deg,
+    rgba(79, 172, 254, 0.2),
+    rgba(0, 242, 254, 0.2)
+  );
 }
 
 @keyframes float {
@@ -540,7 +568,12 @@ header .intro-text {
 .deco-line {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
   animation: pulse 2s ease-in-out infinite;
 }
 
@@ -554,7 +587,8 @@ header .intro-text {
 }
 
 @keyframes sparkle {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(45deg) scale(1);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   }
@@ -578,7 +612,14 @@ header .intro-text {
 .kinks-word {
   display: block;
   position: relative;
-  background: linear-gradient(135deg, #fff 0%, #a8edea 25%, #fed6e3 50%, #d299c2 75%, #fff 100%);
+  background: linear-gradient(
+    135deg,
+    #fff 0%,
+    #a8edea 25%,
+    #fed6e3 50%,
+    #d299c2 75%,
+    #fff 100%
+  );
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -601,7 +642,8 @@ header .intro-text {
 }
 
 @keyframes textShimmer {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -616,7 +658,11 @@ header .intro-text {
   transform: translate(-50%, -50%);
   width: 300px;
   height: 100px;
-  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse,
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 70%
+  );
   filter: blur(20px);
   animation: glow 3s ease-in-out infinite alternate;
 }
@@ -652,18 +698,24 @@ header .intro-text {
 }
 
 .highlight-text::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(254, 214, 227, 0.8), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(254, 214, 227, 0.8),
+    transparent
+  );
   animation: underlineGlow 2s ease-in-out infinite;
 }
 
 @keyframes underlineGlow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.5;
     transform: scaleX(0.8);
   }
@@ -697,7 +749,7 @@ header .intro-text {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 40px 30px;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   overflow: hidden;
   cursor: pointer;
   display: flex;
@@ -719,7 +771,11 @@ header .intro-text {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(168, 237, 234, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(168, 237, 234, 0.2)
+  );
   opacity: 0;
   transition: opacity 0.6s ease;
   border-radius: 20px;
@@ -742,7 +798,11 @@ header .intro-text {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 70%
+  );
   filter: blur(15px);
   opacity: 0;
   transition: opacity 0.6s ease;
@@ -754,7 +814,8 @@ header .intro-text {
 }
 
 @keyframes iconPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
@@ -771,7 +832,7 @@ header .intro-text {
   border-radius: 50% !important;
   color: #fff !important;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1) !important;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1) !important;
   position: relative;
   z-index: 2;
 }
@@ -877,20 +938,20 @@ header .intro-text {
   .kinks-title {
     font-size: 3rem !important;
   }
-  
+
   .services-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .service-card {
     height: 320px;
   }
-  
+
   .kinks-description {
     font-size: 16px !important;
   }
-  
+
   .shape {
     display: none;
   }
@@ -900,7 +961,7 @@ header .intro-text {
   .kinks-title {
     font-size: 2.5rem !important;
   }
-  
+
   .kinks-main {
     letter-spacing: 2px;
   }
@@ -1891,7 +1952,9 @@ body.zoom-active {
   z-index: 2;
 }
 
-.contact-icon-1, .contact-icon-2, .contact-icon-3 {
+.contact-icon-1,
+.contact-icon-2,
+.contact-icon-3 {
   font-size: 24px;
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
@@ -1922,7 +1985,8 @@ body.zoom-active {
 }
 
 @keyframes floatIcon {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -1931,7 +1995,14 @@ body.zoom-active {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #fff 0%, #a8edea 25%, #fed6e3 50%, #d299c2 75%, #fef9d7 100%);
+  background: linear-gradient(
+    135deg,
+    #fff 0%,
+    #a8edea 25%,
+    #fed6e3 50%,
+    #d299c2 75%,
+    #fef9d7 100%
+  );
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1945,7 +2016,8 @@ body.zoom-active {
 }
 
 @keyframes gradientShift {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -1959,7 +2031,8 @@ body.zoom-active {
   gap: 5px;
 }
 
-.title-line-1, .title-line-2 {
+.title-line-1,
+.title-line-2 {
   display: block;
   animation: slideInFromLeft 1s ease-out;
 }
@@ -2011,13 +2084,19 @@ body.zoom-active {
 .underline-line {
   width: 80px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.8),
+    transparent
+  );
   border-radius: 2px;
   animation: expand 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.7;
   }
@@ -2028,7 +2107,8 @@ body.zoom-active {
 }
 
 @keyframes expand {
-  0%, 100% {
+  0%,
+  100% {
     width: 80px;
   }
   50% {
@@ -2057,7 +2137,8 @@ body.zoom-active {
 }
 
 @keyframes sparkle {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg) scale(1);
     color: #a8edea;
   }
@@ -2096,22 +2177,24 @@ body.zoom-active {
   .gradient-text {
     font-size: 2.5rem !important;
   }
-  
+
   .contact-icon-group {
     gap: 10px;
   }
-  
-  .contact-icon-1, .contact-icon-2, .contact-icon-3 {
+
+  .contact-icon-1,
+  .contact-icon-2,
+  .contact-icon-3 {
     width: 40px;
     height: 40px;
     font-size: 18px;
   }
-  
+
   .contact-description {
     font-size: 16px !important;
     padding-left: 30px;
   }
-  
+
   .underline-line {
     width: 60px;
   }
@@ -2121,7 +2204,7 @@ body.zoom-active {
   .gradient-text {
     font-size: 2rem !important;
   }
-  
+
   .contact-description {
     font-size: 14px !important;
     padding-left: 25px;
@@ -2139,18 +2222,25 @@ body.zoom-active {
 }
 
 .magical-nav::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #667eea,
+    #764ba2,
+    transparent
+  );
   animation: navGlow 3s ease-in-out infinite;
 }
 
 @keyframes navGlow {
-  0%, 100% {
+  0%,
+  100% {
     left: -100%;
   }
   50% {
@@ -2168,7 +2258,9 @@ body.zoom-active {
   overflow: hidden;
 }
 
-.nav-particle-1, .nav-particle-2, .nav-particle-3 {
+.nav-particle-1,
+.nav-particle-2,
+.nav-particle-3 {
   position: absolute;
   width: 4px;
   height: 4px;
@@ -2196,11 +2288,13 @@ body.zoom-active {
 }
 
 @keyframes navParticleFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
     opacity: 0;
   }
-  10%, 90% {
+  10%,
+  90% {
     opacity: 1;
   }
   50% {
@@ -2231,7 +2325,11 @@ body.zoom-active {
   transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;
-  background: radial-gradient(circle, rgba(102, 126, 234, 0.3) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(102, 126, 234, 0.3) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -2243,7 +2341,8 @@ body.zoom-active {
 }
 
 @keyframes logoGlow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
@@ -2330,7 +2429,11 @@ body.zoom-active {
 .orb {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.2),
+    rgba(118, 75, 162, 0.2)
+  );
   backdrop-filter: blur(40px);
   animation: orbFloat 20s infinite ease-in-out;
 }
@@ -2341,7 +2444,11 @@ body.zoom-active {
   top: 10%;
   left: 10%;
   animation-delay: 0s;
-  background: linear-gradient(135deg, rgba(255, 107, 107, 0.3), rgba(255, 142, 83, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 107, 0.3),
+    rgba(255, 142, 83, 0.3)
+  );
 }
 
 .orb-2 {
@@ -2350,7 +2457,11 @@ body.zoom-active {
   top: 20%;
   right: 15%;
   animation-delay: 4s;
-  background: linear-gradient(135deg, rgba(78, 205, 196, 0.3), rgba(68, 160, 141, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(78, 205, 196, 0.3),
+    rgba(68, 160, 141, 0.3)
+  );
 }
 
 .orb-3 {
@@ -2359,7 +2470,11 @@ body.zoom-active {
   bottom: 30%;
   left: 20%;
   animation-delay: 8s;
-  background: linear-gradient(135deg, rgba(168, 237, 234, 0.3), rgba(254, 214, 227, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(168, 237, 234, 0.3),
+    rgba(254, 214, 227, 0.3)
+  );
 }
 
 .orb-4 {
@@ -2368,7 +2483,11 @@ body.zoom-active {
   bottom: 20%;
   right: 25%;
   animation-delay: 12s;
-  background: linear-gradient(135deg, rgba(210, 153, 194, 0.3), rgba(254, 249, 215, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(210, 153, 194, 0.3),
+    rgba(254, 249, 215, 0.3)
+  );
 }
 
 .orb-5 {
@@ -2378,11 +2497,16 @@ body.zoom-active {
   left: 50%;
   transform: translate(-50%, -50%);
   animation-delay: 16s;
-  background: linear-gradient(135deg, rgba(79, 172, 254, 0.3), rgba(0, 242, 254, 0.3));
+  background: linear-gradient(
+    135deg,
+    rgba(79, 172, 254, 0.3),
+    rgba(0, 242, 254, 0.3)
+  );
 }
 
 @keyframes orbFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   25% {
@@ -2402,8 +2526,10 @@ body.zoom-active {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 50px 50px;
   animation: gridMove 30s linear infinite;
@@ -2460,7 +2586,14 @@ body.zoom-active {
 
 .title-word {
   display: inline-block;
-  background: linear-gradient(135deg, #fff 0%, #a8edea 25%, #fed6e3 50%, #d299c2 75%, #fff 100%);
+  background: linear-gradient(
+    135deg,
+    #fff 0%,
+    #a8edea 25%,
+    #fed6e3 50%,
+    #d299c2 75%,
+    #fff 100%
+  );
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2486,7 +2619,8 @@ body.zoom-active {
 }
 
 @keyframes titleShimmer {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
     transform: translateY(0px);
   }
@@ -2526,7 +2660,8 @@ body.zoom-active {
 }
 
 @keyframes segmentGrow {
-  0%, 100% {
+  0%,
+  100% {
     transform: scaleX(1);
     opacity: 0.7;
   }
@@ -2726,7 +2861,8 @@ body.zoom-active {
 }
 
 @keyframes scrollArrowMove {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
     transform: rotate(-45deg) translate(0, 0);
   }
@@ -2749,20 +2885,20 @@ body.zoom-active {
   .tech-stack-section h2 {
     font-size: 1.5rem;
   }
-  
+
   .magical-title {
     font-size: 2.5rem !important;
   }
-  
+
   .title-words {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .orb {
     display: none;
   }
-  
+
   .magical-paragraph {
     font-size: 1.6rem !important;
   }
@@ -2835,7 +2971,8 @@ body.zoom-active {
 }
 
 @keyframes featureParticleFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.3;
   }
@@ -2896,7 +3033,8 @@ body.zoom-active {
 }
 
 @keyframes decorationPulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.5;
     transform: scaleX(1);
   }
@@ -2907,7 +3045,8 @@ body.zoom-active {
 }
 
 @keyframes sparkleGlow {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1) rotate(0deg);
     opacity: 0.7;
   }
@@ -2940,7 +3079,8 @@ body.zoom-active {
 }
 
 @keyframes titleGlow {
-  0%, 100% {
+  0%,
+  100% {
     filter: brightness(1);
   }
   50% {
@@ -2955,13 +3095,18 @@ body.zoom-active {
   transform: translate(-50%, -50%);
   width: 400px;
   height: 100px;
-  background: radial-gradient(ellipse, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse,
+    rgba(102, 126, 234, 0.1) 0%,
+    transparent 70%
+  );
   filter: blur(30px);
   animation: glowPulse 4s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.3;
     transform: translate(-50%, -50%) scale(1);
   }
@@ -2996,7 +3141,7 @@ body.zoom-active {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 40px 30px 50px 30px;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   overflow: hidden;
   cursor: pointer;
   display: flex;
@@ -3066,7 +3211,11 @@ body.zoom-active {
 }
 
 .feature-card[data-index="0"] .icon-background {
-  background: linear-gradient(135deg, rgba(231, 76, 60, 0.15), rgba(236, 112, 99, 0.15)) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(231, 76, 60, 0.15),
+    rgba(236, 112, 99, 0.15)
+  ) !important;
 }
 
 /* Finance - Gold/Yellow */
@@ -3080,7 +3229,11 @@ body.zoom-active {
 }
 
 .feature-card[data-index="1"] .icon-background {
-  background: linear-gradient(135deg, rgba(243, 156, 18, 0.15), rgba(247, 220, 111, 0.15)) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(243, 156, 18, 0.15),
+    rgba(247, 220, 111, 0.15)
+  ) !important;
 }
 
 /* E-Commerce - Purple/Magenta */
@@ -3094,7 +3247,11 @@ body.zoom-active {
 }
 
 .feature-card[data-index="2"] .icon-background {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(248, 187, 208, 0.3)) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(248, 187, 208, 0.3)
+  ) !important;
 }
 
 /* Logistics - Blue/Cyan */
@@ -3108,7 +3265,11 @@ body.zoom-active {
 }
 
 .feature-card[data-index="3"] .icon-background {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(187, 222, 251, 0.3)) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8),
+    rgba(187, 222, 251, 0.3)
+  ) !important;
 }
 
 .icon-subtle-glow {
@@ -3125,22 +3286,38 @@ body.zoom-active {
 
 /* Healthcare glow */
 .feature-card[data-index="0"] .icon-subtle-glow {
-  background: radial-gradient(circle, rgba(231, 76, 60, 0.2) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(231, 76, 60, 0.2) 0%,
+    transparent 70%
+  );
 }
 
 /* Finance glow */
 .feature-card[data-index="1"] .icon-subtle-glow {
-  background: radial-gradient(circle, rgba(243, 156, 18, 0.2) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(243, 156, 18, 0.2) 0%,
+    transparent 70%
+  );
 }
 
 /* E-Commerce glow */
 .feature-card[data-index="2"] .icon-subtle-glow {
-  background: radial-gradient(circle, rgba(106, 27, 154, 0.2) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(106, 27, 154, 0.2) 0%,
+    transparent 70%
+  );
 }
 
 /* Logistics glow */
 .feature-card[data-index="3"] .icon-subtle-glow {
-  background: radial-gradient(circle, rgba(21, 101, 192, 0.2) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(21, 101, 192, 0.2) 0%,
+    transparent 70%
+  );
 }
 
 .feature-card:hover .icon-subtle-glow {
@@ -3149,7 +3326,8 @@ body.zoom-active {
 }
 
 @keyframes subtleGlowPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
     opacity: 0.3;
   }
@@ -3219,7 +3397,11 @@ body.zoom-active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.05),
+    rgba(118, 75, 162, 0.05)
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 20px;
@@ -3268,7 +3450,7 @@ body.zoom-active {
 }
 
 #about::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -3295,7 +3477,8 @@ body.zoom-active {
 }
 
 @keyframes aboutTitleShimmer {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -3343,10 +3526,18 @@ body.zoom-active {
   animation: aboutListSlide 0.8s ease-out both;
 }
 
-#about .list-style li:nth-child(1) { animation-delay: 0.5s; }
-#about .list-style li:nth-child(2) { animation-delay: 0.6s; }
-#about .list-style li:nth-child(3) { animation-delay: 0.7s; }
-#about .list-style li:nth-child(4) { animation-delay: 0.8s; }
+#about .list-style li:nth-child(1) {
+  animation-delay: 0.5s;
+}
+#about .list-style li:nth-child(2) {
+  animation-delay: 0.6s;
+}
+#about .list-style li:nth-child(3) {
+  animation-delay: 0.7s;
+}
+#about .list-style li:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
 @keyframes aboutListSlide {
   0% {
@@ -3360,7 +3551,7 @@ body.zoom-active {
 }
 
 #about .list-style li::before {
-  content: '✨';
+  content: "✨";
   position: absolute;
   left: 0;
   top: 10px;
@@ -3369,7 +3560,8 @@ body.zoom-active {
 }
 
 @keyframes sparkleRotate {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg) scale(1);
   }
   50% {
@@ -3388,10 +3580,12 @@ body.zoom-active {
   height: auto !important;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
   animation: logoFloat 6s ease-in-out infinite;
+  border-radius: 10px;
 }
 
 @keyframes logoFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   33% {
@@ -3428,20 +3622,20 @@ body.zoom-active {
   .magical-features-title {
     font-size: 2.2rem !important;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr !important;
     gap: 25px !important;
   }
-  
+
   .feature-card {
     height: 400px;
   }
-  
+
   #about .about-text h2 {
     font-size: 2.2rem !important;
   }
-  
+
   #about .about-text h3 {
     font-size: 1.5rem !important;
   }
@@ -3453,11 +3647,11 @@ body.zoom-active {
     gap: 20px !important;
     padding: 0 10px !important;
   }
-  
+
   .feature-card {
     height: 380px;
   }
-  
+
   .card-inner {
     padding: 35px 25px 45px 25px !important;
   }
@@ -3517,7 +3711,8 @@ body.zoom-active {
 }
 
 @keyframes sparkleFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.3;
   }
@@ -3561,7 +3756,8 @@ body.zoom-active {
 }
 
 @keyframes teamTitleGlow {
-  0%, 100% {
+  0%,
+  100% {
     filter: brightness(1);
     transform: scale(1);
   }
@@ -3581,7 +3777,8 @@ body.zoom-active {
 }
 
 @keyframes underlinePulse {
-  0%, 100% {
+  0%,
+  100% {
     width: 100px;
     opacity: 0.7;
   }
@@ -3662,7 +3859,12 @@ body.zoom-active {
   transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
-  background: radial-gradient(circle, rgba(255, 107, 107, 0.4) 0%, rgba(252, 182, 159, 0.3) 40%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 107, 107, 0.4) 0%,
+    rgba(252, 182, 159, 0.3) 40%,
+    transparent 70%
+  );
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -3674,7 +3876,8 @@ body.zoom-active {
 }
 
 @keyframes imageGlowPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
@@ -3691,16 +3894,15 @@ body.zoom-active {
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
   position: relative;
   z-index: 2;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15), 
-              0 5px 15px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.08) !important;
   filter: brightness(1.1) contrast(1.05) !important;
 }
 
 .magical-team-card:hover .magical-team-img {
   transform: scale(1.08) rotate(2deg);
   border-color: #ff6b6b !important;
-  box-shadow: 0 25px 50px rgba(255, 107, 107, 0.3), 
-              0 10px 25px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 25px 50px rgba(255, 107, 107, 0.3),
+    0 10px 25px rgba(0, 0, 0, 0.15) !important;
   filter: brightness(1.2) contrast(1.1) saturate(1.1) !important;
 }
 
@@ -3773,7 +3975,7 @@ body.zoom-active {
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .magical-team-card:hover .team-role {
@@ -3888,7 +4090,8 @@ body.zoom-active {
 }
 
 @keyframes quoteFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.1;
   }
@@ -3911,7 +4114,8 @@ body.zoom-active {
 }
 
 @keyframes iconBob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -3933,7 +4137,8 @@ body.zoom-active {
 }
 
 @keyframes emphasisPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -4048,7 +4253,11 @@ body.zoom-active {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(102, 126, 234, 0.3) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(102, 126, 234, 0.3) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -4060,7 +4269,8 @@ body.zoom-active {
 }
 
 @keyframes testimonialGlow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
   }
   50% {
@@ -4107,14 +4317,25 @@ body.zoom-active {
   animation: starTwinkle 2s ease-in-out infinite;
 }
 
-.star:nth-child(1) { animation-delay: 0s; }
-.star:nth-child(2) { animation-delay: 0.2s; }
-.star:nth-child(3) { animation-delay: 0.4s; }
-.star:nth-child(4) { animation-delay: 0.6s; }
-.star:nth-child(5) { animation-delay: 0.8s; }
+.star:nth-child(1) {
+  animation-delay: 0s;
+}
+.star:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.star:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.star:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.star:nth-child(5) {
+  animation-delay: 0.8s;
+}
 
 @keyframes starTwinkle {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.8;
   }
@@ -4130,7 +4351,12 @@ body.zoom-active {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
   transition: left 0.6s ease;
   border-radius: 25px;
 }
@@ -4144,35 +4370,35 @@ body.zoom-active {
   .magical-team-title {
     font-size: 2.5rem !important;
   }
-  
+
   .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
   }
-  
+
   .magical-team-img {
     width: 150px !important;
     height: 150px !important;
   }
-  
+
   .team-card-inner {
     min-height: 320px;
     padding: 35px 25px;
   }
-  
+
   .magical-testimonials-title {
     font-size: 2.2rem !important;
   }
-  
+
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .testimonial-inner {
     min-height: 320px;
   }
-  
+
   .quote {
     font-size: 4rem;
   }
@@ -4185,7 +4411,13 @@ body.zoom-active {
 .magical-features-v2 {
   position: relative;
   padding: 140px 0;
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1d3a 30%, #2d3561 70%, #3f4787 100%);
+  background: linear-gradient(
+    135deg,
+    #0a0e27 0%,
+    #1a1d3a 30%,
+    #2d3561 70%,
+    #3f4787 100%
+  );
   overflow: hidden;
   min-height: 100vh;
 }
@@ -4213,7 +4445,11 @@ body.zoom-active {
   position: absolute;
   width: 120%;
   height: 120%;
-  background: radial-gradient(ellipse at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.05) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   animation: waveFloat 8s ease-in-out infinite;
 }
@@ -4239,7 +4475,8 @@ body.zoom-active {
 }
 
 @keyframes waveFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
     opacity: 0.3;
   }
@@ -4297,7 +4534,8 @@ body.zoom-active {
 }
 
 @keyframes elementFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) translateX(0px) scale(1);
     opacity: 0.6;
   }
@@ -4345,7 +4583,14 @@ body.zoom-active {
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+  background: linear-gradient(
+    45deg,
+    #ff6b6b,
+    #4ecdc4,
+    #45b7d1,
+    #96ceb4,
+    #ffeaa7
+  );
   border-radius: 50px;
   z-index: -1;
   opacity: 0.7;
@@ -4354,7 +4599,8 @@ body.zoom-active {
 }
 
 @keyframes badgePulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -4363,7 +4609,8 @@ body.zoom-active {
 }
 
 @keyframes gradientShift {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.7;
     filter: blur(8px) hue-rotate(0deg);
   }
@@ -4408,7 +4655,8 @@ body.zoom-active {
 }
 
 @keyframes gradientText {
-  0%, 100% {
+  0%,
+  100% {
     background-position: 0% 50%;
   }
   50% {
@@ -4496,7 +4744,11 @@ body.zoom-active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 107, 0.1) 0%,
+    rgba(78, 205, 196, 0.1) 100%
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 25px;
@@ -4512,7 +4764,12 @@ body.zoom-active {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
   transform: rotate(-45deg);
   transition: transform 0.6s ease;
   pointer-events: none;
@@ -4596,14 +4853,19 @@ body.zoom-active {
   left: 50%;
   width: 80px;
   height: 80px;
-  background: radial-gradient(circle, rgba(45, 53, 97, 0.15) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(45, 53, 97, 0.15) 0%,
+    transparent 70%
+  );
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: iconPulse 2s ease-in-out infinite;
 }
 
 @keyframes iconPulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(-50%, -50%) scale(1);
     opacity: 0.5;
   }
@@ -4740,7 +5002,8 @@ body.zoom-active {
 }
 
 @keyframes particleFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) translateX(0px);
     opacity: 0.6;
   }
@@ -4756,13 +5019,13 @@ body.zoom-active {
   .navbar-brand img {
     height: 35px !important;
   }
-  
+
   .navbar-nav {
     margin-top: 10px;
   }
-  
+
   .navbar-collapse {
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 10px;
     padding-top: 10px;
   }
@@ -4771,12 +5034,12 @@ body.zoom-active {
   .intro {
     padding: 120px 0 80px;
   }
-  
+
   .intro h1 {
     font-size: 2.5rem !important;
     margin-bottom: 20px;
   }
-  
+
   .intro p {
     font-size: 16px !important;
     margin-bottom: 30px;
@@ -4787,26 +5050,26 @@ body.zoom-active {
   .magical-features-v2 {
     padding: 80px 0;
   }
-  
+
   .features-main-title {
     font-size: 2.5rem !important;
   }
-  
+
   .features-subtitle {
     font-size: 1.5rem !important;
     padding: 0 20px;
   }
-  
+
   .features-showcase {
     grid-template-columns: 1fr;
     gap: 25px;
     padding: 0 20px;
   }
-  
+
   .showcase-card {
     padding: 25px 20px;
   }
-  
+
   .floating-element {
     font-size: 1.3rem;
   }
@@ -4815,7 +5078,7 @@ body.zoom-active {
   #about {
     padding: 80px 0;
   }
-  
+
   #about .container {
     padding: 0 20px;
   }
@@ -4829,7 +5092,7 @@ body.zoom-active {
   #contact {
     padding: 80px 0 40px;
   }
-  
+
   #contact .container {
     padding: 0 20px;
   }
@@ -4851,12 +5114,12 @@ body.zoom-active {
   .intro {
     padding: 100px 0 60px;
   }
-  
+
   .intro h1 {
     font-size: 2rem !important;
     line-height: 1.2;
   }
-  
+
   .intro p {
     font-size: 14px !important;
     padding: 0 15px;
@@ -4870,7 +5133,7 @@ body.zoom-active {
   .features-main-title {
     font-size: 2rem !important;
   }
-  
+
   .features-subtitle {
     font-size: 0.9rem !important;
   }
@@ -4923,7 +5186,7 @@ body.zoom-active {
   .intro {
     padding: 80px 0 50px;
   }
-  
+
   .intro h1 {
     font-size: 1.6rem !important;
   }
@@ -4940,12 +5203,14 @@ body.zoom-active {
     padding: 60px 0;
   }
 
-  #about, #services, #contact {
+  #about,
+  #services,
+  #contact {
     padding: 60px 0 40px;
   }
 }
 
-.contact-us-col{
+.contact-us-col {
   padding-left: 0;
   padding-right: 0;
 }
