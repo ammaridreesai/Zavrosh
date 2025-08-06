@@ -241,51 +241,59 @@
     {
       "img": "img/team/ammar.jpeg",
       "name": "Ammar Idrees",
-      "job": "CEO",
-      "experience": "5+",
-      "projects": "30+",
-      "specs": ["Expert", "Leader", "Innovator"]
+      "job": "Frontend Developer",
+      "experience": "3+",
+      "projects": "10+",
+      "specs": ["UI Wizard", "Pixel Magician", "Visual Seducer"]
     },
     {
       "img": "img/team/zubair.png",
       "name": "Syed Zubair Bukhari",
-      "job": "CTO",
-      "experience": "5+",
-      "projects": "30+",
-      "specs": ["Expert", "Leader", "Innovator"]
+      "job": "Full-Stack Developer",
+      "experience": "4+",
+      "projects": "18+",
+      "specs": [
+        "Full-Stack Pleaser",
+        "Deep Code Penetration",
+        "Hard Problem Solver"
+      ]
     },
     {
       "img": "img/team/ihtishamali.png",
       "name": "Ihtisham Ali",
-      "job": "Technical Director",
-      "experience": "5+",
-      "projects": "50+",
-      "specs": ["Expert", "Leader", "Innovator"]
+      "job": "Full-Stack Developer",
+      "experience": "4+",
+      "projects": "15+",
+      "specs": [
+        "Full-Stack Developer",
+        "System Architecture & Design",
+        "Analytical Thinker"
+      ]
     },
     {
       "img": "img/team/was.jpeg",
       "name": "Waseem Ali",
       "job": "Solution Architech",
-      "experience": "5+",
-      "projects": "50+",
-      "specs": ["Expert", "Leader", "Innovator"]
+      "experience": "4+",
+      "projects": "10+",
+      "specs": ["Software Engineer", "System Designer", "Problem Solver"]
     },
     {
       "img": "img/team/hashim.jpg",
       "name": "Syed Hashim Raza",
       "job": "Flutter Developer",
-      "experience": "5+",
-      "projects": "50+",
-      "specs": ["Expert", "Leader", "Innovator"]
+      "experience": "4+",
+      "projects": "12+",
+      "specs": ["Expert", "Tech Explorer", "Problem Solver"]
     },
 
     {
       "img": "img/team/akash.jpeg",
       "name": "Syed Akash Mazhar",
       "job": "MERN Stack Developer",
-      "experience": "5+",
-      "projects": "50+",
-      "specs": ["Expert", "Leader", "Innovator"]
+      "experience": "3+",
+      "projects": "5+",
+      "specs": ["Problem Solver", "Versatile Developer", "Tech Explorer"]
     },
 
     {
@@ -293,17 +301,25 @@
       "name": "Usama Idrees",
       "job": "IT Support Analyst",
       "experience": "5+",
-      "projects": "50+",
-      "specs": ["Expert", "Leader", "Innovator"]
+      "projects": "26+",
+      "specs": ["Expert", "Trouble Shooter", "Problem Solver"]
     },
 
     {
       "img": "img/team/hammad.jpg",
       "name": "Hammad Akram",
       "job": "React JS Developer",
-      "experience": "5+",
-      "projects": "50+",
-      "specs": ["Expert", "Leader", "Innovator"]
+      "experience": "3+",
+      "projects": "10+",
+      "specs": ["Frontend", "Satisfier", "System Designer"]
+    },
+    {
+      "img": "img/team/hassan.jpg",
+      "name": "Muahmmad Hassan",
+      "job": "Backend Developer",
+      "experience": "3+",
+      "projects": "10+",
+      "specs": ["Software Engineer", "Problem Solver", "Innovator"]
     }
   ],
   "Contact": {

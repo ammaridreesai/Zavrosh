@@ -5,6 +5,7 @@ export const About = (props) => {
   return (
     <div id="about" className="responsive-section">
       <div className="container">
+        {/* Row 1: Main image + text */}
         <div className="row">
           <div className="col-12 col-md-6">
             <LazyImage
