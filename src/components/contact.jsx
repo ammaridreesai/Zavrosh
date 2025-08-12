@@ -18,47 +18,54 @@ export const Contact = (props) => {
   };
   const clearState = () => setState(initialState);
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (!name.trim() || !email.trim() || !message.trim()) {
-      showNotification('Please fill in all fields', 'error');
+      showNotification("Please fill in all fields", "error");
       return;
     }
 
     setIsSubmitting(true);
 
     emailjs
-      .sendForm("service_4t0520f", "template_ysuvx0g", e.target, "IQRWrnLskn2jksLh4")
+      .sendForm(
+        "service_4t0520f",
+        "template_ysuvx0g",
+        e.target,
+        "IQRWrnLskn2jksLh4"
+      )
       .then(
         (result) => {
           setSubmitSuccess(true);
-          showNotification('Message sent successfully!', 'success');
+          showNotification("Message sent successfully!", "success");
           clearState();
           e.target.reset();
           setIsSubmitting(false);
         },
         (error) => {
-          showNotification('Failed to send message. Please try again.', 'error');
-          console.error('EmailJS error:', error);
+          showNotification(
+            "Failed to send message. Please try again.",
+            "error"
+          );
+          console.error("EmailJS error:", error);
           setIsSubmitting(false);
         }
       );
   };
 
   const showNotification = (message, type) => {
-    const notification = document.createElement('div');
+    const notification = document.createElement("div");
     notification.className = `magic-notification ${type}`;
     notification.textContent = message;
     document.body.appendChild(notification);
-    
+
     setTimeout(() => {
-      notification.classList.add('show');
+      notification.classList.add("show");
     }, 100);
-    
+
     setTimeout(() => {
-      notification.classList.remove('show');
+      notification.classList.remove("show");
       setTimeout(() => {
         document.body.removeChild(notification);
       }, 300);
@@ -78,8 +85,8 @@ export const Contact = (props) => {
                     <i className="fa fa-comments contact-icon-3"></i>
                   </div>
                   <h2 className="gradient-text animated-title">
-                    <span className="title-line-1">Ready to Play?</span>
-                    <span className="title-line-2">Let's Talk</span>
+                    <span className="">Ready to Play?</span>
+                    <span className="">Let's Talk</span>
                   </h2>
                   <div className="title-underline">
                     <div className="underline-dot"></div>
@@ -89,11 +96,19 @@ export const Contact = (props) => {
                 </div>
                 <p className="contact-description">
                   <i className="fa fa-magic description-icon"></i>
-                  Got a question, a project, or just wanna slide into our DMs? Fill out the form below — whether you want a quickie or a long-term play, we promise to blow your mind and reply faster than your WiFi cuts out right before the best part.
+                  Got a question, a project, or just wanna slide into our DMs?
+                  Fill out the form below — whether you want a quickie or a
+                  long-term play, we promise to blow your mind and reply faster
+                  than your WiFi cuts out right before the best part.
                 </p>
               </div>
 
-              <form name="sentMessage" className="contact-us-form" validate onSubmit={handleSubmit}>
+              <form
+                name="sentMessage"
+                className="contact-us-form"
+                validate
+                onSubmit={handleSubmit}
+              >
                 <div className="row">
                   <div className="contact-us-col col-md-6">
                     <div className="form-group">
@@ -101,7 +116,7 @@ export const Contact = (props) => {
                         type="text"
                         id="name"
                         name="name"
-                        className="form-control"
+                        className="form-control inputs"
                         placeholder="Name"
                         required
                         onChange={handleChange}
@@ -115,7 +130,7 @@ export const Contact = (props) => {
                         type="email"
                         id="email"
                         name="email"
-                        className="form-control"
+                        className="form-control inputs"
                         placeholder="Email"
                         required
                         onChange={handleChange}
@@ -128,7 +143,7 @@ export const Contact = (props) => {
                   <textarea
                     name="message"
                     id="message"
-                    className="form-control"
+                    className="form-control inputs"
                     rows="4"
                     placeholder="Message"
                     required
@@ -137,9 +152,11 @@ export const Contact = (props) => {
                   <p className="help-block text-danger"></p>
                 </div>
                 <div id="success"></div>
-                <button 
-                  type="submit" 
-                  className={`btn btn-custom btn-lg ${isSubmitting ? 'submitting' : ''} ${submitSuccess ? 'success' : ''}`}
+                <button
+                  type="submit"
+                  className={`btn btn-custom btn-lg ${
+                    isSubmitting ? "submitting" : ""
+                  } ${submitSuccess ? "success" : ""}`}
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (
@@ -164,7 +181,9 @@ export const Contact = (props) => {
               <div className="section-title" style={{ marginTop: "50px" }}>
                 <h2>Claim Your Free Tease & Talk</h2>
                 <p>
-                  Let’s get intimate with your business tech needs. Book a free call with me — I’ll lock it in tight on my calendar and make sure we spark something hot, fast, and unforgettable.
+                  Let’s get intimate with your business tech needs. Book a free
+                  call with me — I’ll lock it in tight on my calendar and make
+                  sure we spark something hot, fast, and unforgettable.
                 </p>
                 <div className="booking-widget">
                   <iframe
@@ -209,7 +228,7 @@ export const Contact = (props) => {
             <div className="row">
               <div className="social">
                 <ul>
-                  <li>
+                  {/* <li>
                     <a href={props.data ? props.data.facebook : "/"}>
                       <i className="fa fa-facebook"></i>
                     </a>
@@ -218,10 +237,10 @@ export const Contact = (props) => {
                     <a href={props.data ? props.data.twitter : "/"}>
                       <i className="fa fa-twitter"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href={props.data ? props.data.youtube : "/"}>
-                      <i className="fa fa-youtube"></i>
+                    <a href={props.data ? props.data.linkedIn : "/"}>
+                      <i className="fa fa-linkedIn"></i>
                     </a>
                   </li>
                 </ul>
