@@ -1,12 +1,15 @@
 export const Navigation = (props) => {
   return (
-    <nav id="menu" className="navbar navbar-default navbar-fixed-top magical-nav">
+    <nav
+      id="menu"
+      className="navbar navbar-default navbar-fixed-top magical-nav"
+    >
       <div className="nav-particles">
         <div className="particle nav-particle-1"></div>
         <div className="particle nav-particle-2"></div>
         <div className="particle nav-particle-3"></div>
       </div>
-      
+
       <div className="container">
         <div className="navbar-header">
           <button
@@ -20,7 +23,7 @@ export const Navigation = (props) => {
             <span className="icon-bar magical-bar"></span>
             <span className="icon-bar magical-bar"></span>
           </button>
-          <a className="navbar-brand page-scroll magical-brand" href="#page-top">
+          <a className="navbar-brand page-scroll magical-brand" href="/">
             <div className="logo-wrapper">
               <img
                 src="img/logo.svg"
@@ -74,7 +77,10 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#contact" className="page-scroll magical-nav-link contact-special">
+              <a
+                href="#contact"
+                className="page-scroll magical-nav-link contact-special"
+              >
                 <span className="nav-text">Contact</span>
                 <div className="nav-hover-effect special-effect"></div>
               </a>
