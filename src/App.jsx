@@ -3,7 +3,7 @@ import { Navigation } from "./components/navigation";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
-import { TeamProfessional as Team } from './components/Team-Professional';
+import { TeamProfessional as Team } from "./components/Team-Professional";
 
 // Lazy load components
 const Header = React.lazy(() =>
@@ -24,7 +24,9 @@ const Services = React.lazy(() =>
 );
 const Portfolio = React.lazy(() => import("./components/portfolio"));
 const Gallery = React.lazy(() =>
-  import("./components/gallery-orbital").then((module) => ({ default: module.OrbitalGallery }))
+  import("./components/gallery-orbital").then((module) => ({
+    default: module.OrbitalGallery,
+  }))
 );
 const Contact = React.lazy(() =>
   import("./components/contact").then((module) => ({ default: module.Contact }))
@@ -106,7 +108,7 @@ const App = () => {
       >
         <Gallery data={landingPageData.Gallery} />
       </Suspense>
-      <Suspense
+      {/* <Suspense
         fallback={
           <div className="loading-section">
             <div className="loading-spinner"></div> Loading Team...
@@ -114,7 +116,7 @@ const App = () => {
         }
       >
         <Team data={landingPageData.Team} />
-      </Suspense>
+      </Suspense> */}
       <Suspense
         fallback={
           <div className="loading-section">
