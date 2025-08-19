@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const initialState = {
   name: "",
@@ -29,26 +29,30 @@ export const Contact = (props) => {
     setIsSubmitting(true);
 
     emailjs
-      .sendForm(
-        "service_4t0520f",
-        "template_ysuvx0g",
-        e.target,
-        "IQRWrnLskn2jksLh4"
+      .send(
+        "seduce_code_1",
+        "template_kl2not7",
+        {
+          from_name: name,
+          from_email: email,
+          message: message,
+        },
+        "zEFMtpBiE3VZYCsTF"
       )
       .then(
-        (result) => {
+        () => {
           setSubmitSuccess(true);
           showNotification("Message sent successfully!", "success");
           clearState();
           e.target.reset();
           setIsSubmitting(false);
+          setTimeout(() => {
+            setSubmitSuccess(false);
+          }, 5000);
         },
         (error) => {
-          showNotification(
-            "Failed to send message. Please try again.",
-            "error"
-          );
-          console.error("EmailJS error:", error);
+          showNotification("Failed to send message", "error");
+          console.error(error);
           setIsSubmitting(false);
         }
       );
